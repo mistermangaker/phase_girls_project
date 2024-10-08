@@ -10,7 +10,7 @@ init python in mistermanagker_examplemissions:
 
 
 label examplemission:
-    call screen Quick_story_title(title= "example mission", subtext = "part one", author = "mistermangaker") 
+    call screen Quick_story_title(title= "example mission", subtext = "part one", author = "mistermangaker",music_volume = 0.2) 
     scene pippa_room day
     show pippa jacket jacket_up at left
     show tenma at right 

@@ -2,11 +2,9 @@
 image bg room = Solid('#606060')
 
 label start:
-    #call screen test()
-    ""
     
     if not persistent.debugmode:
-        jump introduction
+        call introduction
     
 label daystart:
     scene bg room

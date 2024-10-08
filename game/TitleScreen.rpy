@@ -1,7 +1,8 @@
 screen Quick_story_title(author = None,title = None,subtext = None,credit = None,displayimage = "gui/quick_title_background.png", music= "Music_Export/Calm/No.7 Alone With My Thoughts - Esther Abrami.mp3" , music_volume = 1,looped =True,time =10.0):
     if music:
         on 'show' action Play('music', music, relative_volume=music_volume, fadein=1.0, if_changed=True, loop = looped)
-    timer time action Return()
+        on "hide" action Stop("music",fadeout = 1)
+    #timer time action Return()
     frame:
         if displayimage:
             add displayimage:
@@ -24,4 +25,7 @@ screen Quick_story_title(author = None,title = None,subtext = None,credit = None
             if credit:
                 text "[credit]":
                     xalign 0.5
+            textbutton "click to continue":
+                action Return()
+
                 
