@@ -12,9 +12,9 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("phase_girls_project")
+define config.name = _("Phase_dormitory_project")
 
-
+default persistent.debugmode = False
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "phase_girls_project"
+define build.name = "Phase_dormitory_project"
 
 
 ## Sounds and music ############################################################
@@ -129,6 +129,7 @@ default preferences.text_cps = 0
 default preferences.afm_time = 15
 
 
+
 ## Save directory ##############################################################
 ##
 ## Controls the platform-specific place Ren'Py will place the save files for
@@ -143,7 +144,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "phase_girls_project-1728401745"
+define config.save_directory = "Phase_dormitory_project-1724889385"
 
 
 ## Icon ########################################################################

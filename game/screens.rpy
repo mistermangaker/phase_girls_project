@@ -298,12 +298,17 @@ screen navigation():
         if main_menu:
 
             textbutton _("Start") action Start()
+            if persistent.debugmode:
+                textbutton _("quick launch") action ShowMenu("quick_launch")
+            
 
         else:
 
             textbutton _("History") action ShowMenu("history")
 
             textbutton _("Save") action ShowMenu("save")
+            if persistent.debugmode:
+                textbutton _("mission information") action ShowMenu("DevMissionList")
 
         textbutton _("Load") action ShowMenu("load")
 
@@ -329,6 +334,7 @@ screen navigation():
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
             textbutton _("Quit") action Quit(confirm=not main_menu)
+        
 
 
 style navigation_button is gui_button
@@ -662,7 +668,6 @@ screen file_slots(title):
                     spacing gui.page_spacing
 
                     textbutton _("<") action FilePagePrevious()
-                    key "save_page_prev" action FilePagePrevious()
 
                     if config.has_autosave:
                         textbutton _("{#auto_page}A") action FilePage("auto")
@@ -675,7 +680,6 @@ screen file_slots(title):
                         textbutton "[page]" action FilePage(page)
 
                     textbutton _(">") action FilePageNext()
-                    key "save_page_next" action FilePageNext()
 
                 if config.has_sync:
                     if CurrentScreenName() == "save":
@@ -806,6 +810,14 @@ screen preferences():
                         textbutton _("Mute All"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
+                vbox:
+                    label _("Debug Mode")
+                    if persistent.debugmode:
+                        textbutton "Enabled":
+                            action ToggleVariable("persistent.debugmode", True ,False)
+                    else:
+                        textbutton "Disabled":
+                            action ToggleVariable("persistent.debugmode", True ,False)
 
 
 style pref_label is gui_label

@@ -1,33 +1,36 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
-
-
-# The game starts here.
+﻿#placeholder room to be used for placeholder scene transitions
+image bg room = Solid('#606060')
 
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
+    #call screen test()
+    ""
+    
+    if not persistent.debugmode:
+        jump introduction
+    
+label daystart:
     scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
-
-    # This ends the game.
+    $ calendar.AddDay(1)
+    $ instantiatespecialsqueue()
+    $ launchspecials(specialsqueueday)
+    #"lets see what is happening today in the phase connect household"
+label activate:
+    $ sort_missions_to_activelist()
+    $ assign_actors_to_mission()
+    #call screen mission_select_screen_2()
+    call screen mission_select_screen()
+    if _return != "aborted":
+        $ renpy.call(_return)
+label endday:
+    scene bg room
+    menu:
+        "Today is [calendar.Output]"
+        "Go to bed":
+            pass
+    $ launchspecials(specialsqueuenight)
+    ""
+    jump daystart
 
     return
+
+

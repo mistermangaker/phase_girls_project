@@ -1,0 +1,27 @@
+todolist
+mainmap:
+add shiina and lumis room to the main map
+finish the main map
+add music the main map
+add more ui to the main map
+create a framework where the main map can transition between multiple screens(additional floors, alternative loactions)
+
+backend stuff
+update the actors object to add a current and default location so that missions can use that information somehow
+update the missions object to include some kind of json or other bulk information storage system to show on the main map for missions
+
+maybe not neccessary?
+impliment a chapter system to load different missions and asses when chapters are completed
+update the mission objects to have a chapter system of some kind
+
+main menu stuff:
+create a paralaxed main menu
+
+BIGSTUFF:
+color backgrounds
+add additional expressions and poses to characters
+create the 4 remaining characters
+
+documentation stuff:
+continue writing documentation for the code
+start making guides for others
