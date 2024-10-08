@@ -1,0 +1,7 @@
+.vscode
+errors.txt
+log.txt
+traceback.txt
+game/saves/*
+!game/saves/navigation.json
+!game/saves/persistent
