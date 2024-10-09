@@ -12,7 +12,7 @@ init python:
             self.Totaldays = Totaldays
         @property
         def Output(self):
-            return self.Weekdays[self.Day] +  " " + self.Months[self.Month] + " " + str(self.Days+1) + " " + " total days:" +str(self.Totaldays+1)
+            return self.Weekdays[self.Day] +  " " + self.Months[self.Month] + " " + str(self.Days+1) + " " + " total days:" +str(self.Totaldays)
         def AddDay(self, Days):
             #this code is used for missions that are meant to occur over many days without returning to the main mission select screen.
             self.Day += 1

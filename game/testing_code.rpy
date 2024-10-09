@@ -1,3 +1,4 @@
+"""
 init python:
     
     def get_sounds(directory):
@@ -55,4 +56,4 @@ init python:
         else:
             renpy.music.set_pause(True, channel='sound2')
 
-
+"""

@@ -4,7 +4,7 @@ image bg room = Solid('#606060')
 label start:
     
     if not persistent.debugmode:
-        call introduction from _call_introduction
+        call introduction
     
 label daystart:
     scene bg room

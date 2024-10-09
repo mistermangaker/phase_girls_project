@@ -23,9 +23,9 @@ label examplemission:
     ""
     menu:
         "greet":
-            call .greetlabel from _call_examplemission_greetlabel
+            call .greetlabel
         "insult":
-            call .insultlabel from _call_examplemission_insultlabel
+            call .insultlabel
 
     "this is a normal interaction between you two"
     $ examplemission.Complete()
