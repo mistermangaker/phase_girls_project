@@ -1,31 +1,71 @@
-screen Quick_story_title(author = None,title = None,subtext = None,credit = None,displayimage = "gui/quick_title_background.png", music= "Music_Export/Calm/No.7 Alone With My Thoughts - Esther Abrami.mp3" , music_volume = 1,looped =True,time =10.0):
-    if music:
-        on 'show' action Play('music', music, relative_volume=music_volume, fadein=1.0, if_changed=True, loop = looped)
-        on "hide" action Stop("music",fadeout = 1)
-    #timer time action Return()
-    frame:
-        if displayimage:
-            add displayimage:
-                xalign 0.5
-        
-        xysize (1920,1080)
-        vbox:
-            xalign 0.5
-            yalign 0.5
-           
-            if title:
-                text "{size=+20}[title]":
-                    xalign 0.5
-            if subtext:
-                text "{size=+10}[subtext]":
-                    xalign 0.5
-            if author:
-                text "written by: [author]":
-                    xalign 0.5
-            if credit:
-                text "[credit]":
-                    xalign 0.5
-            textbutton "click to continue":
-                action Return()
+#titles screens go here
+## Main Menu screen ############################################################
+##
+## Used to display the main menu when Ren'Py starts.
+##
+## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
-                
+screen main_menu():
+    $ t = renpy.random.choice(Main_menus_background)
+    on 'show' action Play('music', t.bgm, relative_volume =1, fadein=1.0, if_changed=True)
+    on "hide" action Stop("music",fadeout = 1)
+    
+    
+    ## This ensures that any other menu screen is replaced.
+    tag menu
+
+    add gui.main_menu_background
+    add t.backgroundimage:
+        xalign 1.0
+        yalign 1.0
+
+    ## This empty frame darkens the main menu.
+    frame:
+        style "main_menu_frame"
+
+    ## The use statement includes another screen inside this one. The actual
+    ## contents of the main menu are in the navigation screen.
+    use navigation
+
+    if gui.show_name:
+
+        vbox:
+            style "main_menu_vbox"
+
+            text "[config.name!t]":
+                style "main_menu_title"
+
+            text "[config.version]":
+                style "main_menu_version"
+
+
+style main_menu_frame is empty
+style main_menu_vbox is vbox
+style main_menu_text is gui_text
+style main_menu_title is main_menu_text
+style main_menu_version is main_menu_text
+
+style main_menu_frame:
+    xsize 420
+    yfill True
+
+    background "gui/overlay/main_menu.png"
+
+style main_menu_vbox:
+    xalign 0.9
+    xoffset -30
+    xmaximum 1200
+    yalign 0.1
+    yoffset -30
+
+style main_menu_text:
+    properties gui.text_properties("main_menu", accent=True)
+
+style main_menu_title:
+    properties gui.text_properties("title")
+    textalign 0.5
+
+style main_menu_version:
+    properties gui.text_properties("version")
+
+

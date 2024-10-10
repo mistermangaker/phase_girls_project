@@ -47,6 +47,10 @@ image garage day:
     "Backgrounds/DayTime/generic_room.png"
 image garage night:
     "Backgrounds/NightTime/generic_room.png"
+image entrance day:
+    "Backgrounds/DayTime/generic_room.png"
+image entrance night:
+    "Backgrounds/NightTime/generic_room.png"
 #onsen rooms
 image onsen changing_room day:
     "Backgrounds/DayTime/generic_room.png"

@@ -68,8 +68,6 @@ define pico = Character("pico", image='pico')
 default pico_actor = actors("pico")
 
 #managment/staff
-define sakana = Character("Sakana", image='sakana')
-default sakana_actor = actors("sakana", "Mission_select_screen_icons/sakana_icon.png")
 
 define mins = Character("Mins", image='mins')
 default mins_actor = actors("mins")
