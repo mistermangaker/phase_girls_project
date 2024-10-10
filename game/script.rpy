@@ -1,6 +1,9 @@
 ﻿#placeholder room to be used for placeholder scene transitions
 image bg room = Solid('#606060')
 
+#default placeholder main menu background
+default default_background = MainMenus_background(bgm = "Music_Export/Calm/No.7 Alone With My Thoughts - Esther Abrami.mp3", backgroundimage="Backgrounds/MainMenu/sakana_background.png")
+
 label start:
     
     if not persistent.debugmode:

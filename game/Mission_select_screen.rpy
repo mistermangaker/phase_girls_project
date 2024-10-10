@@ -144,18 +144,7 @@ screen mission_select_screen():
                         style "mission_label_text"
                     text "[focused[1]]":
                         style "mission_text"
-            #timer 0.1 action SetScreenVariable("trueshowing",True)
-            #if trueshowing:
-                #use provide_mission_text(i = focused,positions=positions) 
-        #else:
-            #$ trueshowing = False
-            #frame:
-                #xpos 1000 
-                #xysize (400,500)
-                #vbox:
-                #    text i.information[0]
-                #    text i.information[1]
-                #    add i.information[3]
+
 
     frame:
         ypos 1000  

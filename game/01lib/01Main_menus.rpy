@@ -6,4 +6,4 @@ init python:
             self.backgroundimage = backgroundimage
             Main_menus_background.append(self)
 
-default default_background = MainMenus_background()
+
