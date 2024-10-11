@@ -4,14 +4,8 @@
 define eimi = Character("Eimi", image='eimi')
 default eimi_actor = actors("eimi", "Mission_select_screen_icons/eimi_icon.png")
 
-define uruka = Character("Uruka", image='uruka')
-default uruka_actor = actors("uruka", "Mission_select_screen_icons/uruka_icon.png")
 
-define nasa = Character("nasa", image='nasa')
-default nasa_actor = actors("nasa")
 
-define ashelia = Character("ashelia", image='ashelia')
-default ashelia_actor = actors("ashelia")
 
 define lori = Character("lori", image='lori')
 default lori_actor = actors("lori")

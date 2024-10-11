@@ -16,6 +16,6 @@ layeredimage pippa:
         attribute jacket_up if_all['jacket']:
             "pippa_arms_jacket_up"
             
-image pippaaa:
+image pippa_jacket:
     "pippa jacket jacket_up" 
 
