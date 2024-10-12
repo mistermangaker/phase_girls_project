@@ -1,3 +1,54 @@
+init python:
+    def mission_from_xml(xml_path):
+        import os
+        from xml.etree import ElementTree
+        
+        if renpy.loadable('03data/'+xml_path):
+            code_path = '03data/'+xml_path
+        elif renpy.loadable(xml_path):
+            code_path = xml_path
+        else:
+            raise Exception("can not find file: "+xml_path)
+        
+        f_name=(renpy.open_file(code_path))
+        dom=ElementTree.parse(f_name)
+        print("----parsing-----")
+        #ElementTree.dump(dom)
+        jumplabel = dom.find('jumplabel').text
+        print(jumplabel)
+        activationdate = int(dom.find('activationdate').text)
+        print(activationdate)
+        location = dom.find('location').text
+        print(location)
+        actors = dom.find('actors').text
+        
+        IsActive = bool(dom.find('IsActive').text)
+        print(IsActive)
+        
+
+        
+        
+        
+        #print(actors)
+        
+        #print(information)
+        
+        pass
+
+#default examplemission3 = mission_from_xml("example_mission3.xml")
+
+
+
+
+
+
+
+
+
+
+
+
+
 """
 init python:
     

@@ -2,7 +2,96 @@ init -10 python:
     import collections
     import math
     #this is the game list that the mission objescts are added to automatically when a new missions object is created
-    class Story_Mission(object):
+    class Mission(object):
+        def __init__(self, jumplabel: str, activationdate: int, IsActive: bool):
+            self.jumplabel = jumplabel
+            #jumplabel is the label that the game sends you to when the mission is selected on the mission select screen
+            self.IsActive = IsActive
+            #isactive refers to whether or not the mission will appear in the availible mission pool for the mission select screen to show
+            self.activationdate = activationdate
+            self.completed = False
+            self.type = "Base"
+            alltype_missions_list_repository.append(self)
+
+        def SetActivationDate(self, Totaldays):
+            """
+            SetActivationDate(Totaldays)
+            #sets the date in total days var "calendar.Totaldays" for this mission to automatically activate
+            """
+            self.activationdate = Totaldays
+        def Delayactive(self, days):
+            """
+            Delayactive(days)
+            #sets the date in total days var "calendar.Totaldays" + inputed number for this mission to automatically activate
+            """
+            self.activationdate = days + calendar.Totaldays
+        def SetInactive(self):
+            """
+            SetInactive()
+            sets the mission as inactive. inactive missions will not be randomly selected in the mission select screen. used in cases where a certian decision or action will remove a
+            """
+            self.activationdate = None
+            self.IsActive = False
+        def SetActive(self):
+            """
+            SetActive()
+            sets the mission as active. active missions will be randomly selected in the mission select screen.
+            """
+            self.activationdate = 0
+            self.IsActive =True
+        def Complete(self):
+            """
+            Complete()
+            does the same thing as 'SetInactive()' but also sets the mission as complete.
+            """
+            self.IsActive = False
+            self.activationdate = None
+            self.completed = True
+
+        def Conditional_activate(self,*missions):
+            for i in missions:
+                if not i.completed:
+                    return False
+            SetActive()
+            
+
+        @staticmethod
+        def Check_completed_all(*missions):
+            """
+            Check_completed_all(*missions)
+            takes in the instances of several other missions and checks to see if they are all completed. if all are completed then it returns true. 
+            used in cases where you would want to see if several other missions were completed without having to use long "if/else" chains
+            """
+            for i in missions:
+                if not i.completed:
+                    return False
+            return True
+            
+    
+        @staticmethod
+        def Check_completed_percentage(threshold,*missions):
+            """
+            Check_completed_percentage(100,*missions)
+            arguments: threshold float 0 to 100
+            missions: mission instances
+            takes in number between 1 and 100 and a list of missions as arguments
+            checks to see what percentage of those missions are completed and if its higher than the threshold. it returns true
+            """
+            whole = 0
+            notcompleted = 0
+            for i in missions:
+                whole += 1
+                if not i.completed:
+                    notcompleted +=1
+            ratio = 100*float(notcompleted)/float(whole)
+            if ratio >= threshold:
+                return True
+            else:
+                return False
+
+        
+    
+    class Story_Mission(Mission):
         """
         missions
         these are the main story missions of the game. this is what will show up on the main mission select screen
@@ -32,68 +121,34 @@ init -10 python:
         ---
         """
         def __init__(self, jumplabel: str, activationdate: int, location: str, actors: list, IsActive: bool,information = ["title","information about the mission","mt.png"]):
-            self.jumplabel = jumplabel
-            #jumplabel is the label that the game sends you to when the mission is selected on the mission select screen
-            self.IsActive = IsActive
-            #isactive refers to whether or not the mission will appear in the availible mission pool for the mission select screen to show
-            self.activationdate = activationdate
-            #the activation date is the date in "calendar.Totaldays" that the mission will activate on. so a value of 7 will mean that after 7 days have passed ingame the mission will activate the next time the "check mission" code fires
+            super().__init__(jumplabel,activationdate,IsActive)
             self.location = location
             self.actors = actors
-            self.completed = False
             self.type = "story"
             self.information = information
             missionslist_repository.append(self)
-            alltype_missions_list_repository.append(self)
          
         
         """
         functions
         usuage: missionname.functionname()
         """
-        @property
-        def SetActivationDate(self, Totaldays):
-            """
-            SetActivationDate(Totaldays)
-            #sets the date in total days var "calendar.Totaldays" for this mission to automatically activate
-            """
-            self.activationdate = Totaldays
-        def Delayactive(self, days):
-            """
-            Delayactive(days)
-            #sets the date in total days var "calendar.Totaldays" + inputed number for this mission to automatically activate
-            """
-            self.activationdate = days + calendar.Totaldays
-        def SetInactive(self):
-            """
-            SetInactive()
-            sets the mission as inactive. inactive missions will not be randomly selected in the mission select screen. used in cases where a certian decision or action will remove a
-            """
-            self.activationdate = None
-            self.IsActive = False
-        def SetActive(self):
-            """
-            SetActive()
-            sets the mission as active. active missions will be randomly selected in the mission select screen.
-            """
-            self.activationdate = 0
-            self.IsActive =True
-        def Complete(self):
-            """
-            Complete()
-            does the same thing as 'SetInactive()' but also sets the mission as complete.
-            """
-            self.IsActive = False
-            self.activationdate = None
-            self.completed = True
+        
+        
         def Appened_story_information(self,new_information):
             """
             pass in a list of two strings and an image
             """
             self.information = new_information
+        
+        
+        
 
 
-    class Special_Mission(object):
+    
+
+
+    class Special_Mission(Mission):
         """
         special missions
         ---
@@ -118,54 +173,16 @@ init -10 python:
         ---
         """
         def __init__(self, activationtag: str, jumplabel: str, activationdate: int, IsActive: bool):
+            super().__init__(jumplabel,activationdate,IsActive)
             self.activationtag = activationtag
-            self.jumplabel = jumplabel
-            self.activationdate = activationdate
-            self.IsActive = IsActive
             self.inserted = False
-            self.completed = False
             specialmissionslist_repository.append(self)
             self.type = "special"
-            alltype_missions_list_repository.append(self)
+            
         """
         functions
         usuage: missionname.functionname()
         """
-        @property 
-        def SetActivationDate(self, Totaldays):
-            """
-            SetActivationDate(Totaldays)
-            #sets the date in total days var "calendar.Totaldays" for this mission to automatically activate
-            """
-            self.activationdate = Totaldays
-        def Delayactive(self, days):
-            """
-            Delayactive(days)
-            #sets the date in total days var "calendar.Totaldays" + inputed number for this mission to automatically activate
-            """
-            self.activationdate = days + calendar.Totaldays
-        def SetInactive(self):
-            """
-            SetInactive()
-            sets the mission as inactive. inactive missions will not be randomly selected in the mission select screen. used in cases where a certian decision or action will remove a
-            """
-            self.activationdate = None
-            self.IsActive = False
-        def SetActive(self):
-            """
-            SetActive()
-            sets the mission as active. active missions will be randomly selected in the mission select screen.
-            """
-            self.activationdate = 0
-            self.IsActive =True
-        def Complete(self):
-            """
-            Complete()
-            does the same thing as 'SetInactive()' but also sets the mission as complete.
-            """
-            self.IsActive = False
-            self.activationdate = None
-            self.completed = True
         def Priorityactive(self):
             """
             Priorityactive()
@@ -181,40 +198,9 @@ init -10 python:
                 specialsqueuenight.appendleft(self.jumplabel)
     
     
-    def MissionsConditionalActivate(*missions):
-        """
-        Conditionalactive(*missions)
-        takes in the instances of several other missions and checks to see if they are all completed. if all are completed then it returns true. 
-        used in cases where you would want to see if several other missions were completed without having to use long "if/else" chains
-        """
-        for i in missions:
-            if not i.completed:
-                return False
-        return True
 
-    def MissionsPercentageActivate(threshold,*missions):
-        """
-        arguments: threshold float 0 to 100
-        missions: mission instances
-        takes in number between 1 and 100 and a list of missions as arguments
-        checks to see what percentage of those missions are completed and if its higher than the threshold. it returns true
-        """
-        whole = 0
-        notcompleted = 0
-        for i in missions:
-            whole += 1
-            if not i.completed:
-                notcompleted +=1
-        ratio = 100*float(notcompleted)/float(whole)
-        if ratio >= threshold:
-            return True
-        else:
-            return False
 
-        
-        return
-
-    def activate_mission():
+    def activate_mission_by_date():
         """
         looks through the mission list and checks if a missions activation date has passed and the mission is not active.
         it also checks if the mission is diabled if the activation date is '-1' 
@@ -231,7 +217,7 @@ init -10 python:
         missionslist_repository based on if they have been activated or if their activation date 
         has been reached.
         """
-        activate_mission()
+        activate_mission_by_date()
         currently_active_missions_list.clear()
         for i in missionslist_repository:  
             if i.activationdate != None and i.IsActive and not i.completed:
@@ -299,6 +285,7 @@ init -10 python:
                     if i.activationtag == "night":
                         specialsqueuenight.append(i.jumplabel)
     
+
     
     def launchspecials(queue):
         """

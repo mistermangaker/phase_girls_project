@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<mission>
+    <jumplabel>example_mission3</jumplabel>
+    <activationdate>0</activationdate>
+    <location>kitchen</location>
+    <actors>lia_actor,lumi_actor</actors>
+<IsActive>True</IsActive>
+<information>
+    <title>example mission part 3</title>
+    <body>body of the text goes here</body>
+    <image>None</image>
+</information>
+</mission>
