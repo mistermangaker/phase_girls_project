@@ -1,6 +1,6 @@
-default examplemission = Story_Mission("examplemission",0, "tenma_room",[tenma_actor,pippa_actor],True,information=["The First Example Mission", "meant to show you how the code works","mt.png"])
-default examplemission2 = Story_Mission("examplemission2",0, "pippa_room",[sakana_actor,shiina_actor],True)
-default examplespecialmission1 = Special_Mission("night", "examplespecialmission1", None, True)
+default examplemission = Story_Mission("examplemission",0, "tenma_room","tenma,pippa",True,information=["The First Example Mission", "meant to show you how the code works","mt.png"])
+#default examplemission2 = Story_Mission("examplemission2",0, "pippa_room",[sakana_actor,shiina_actor],True)
+#default examplespecialmission1 = Special_Mission("night", "examplespecialmission1", None, True)
 
 init python in mistermanagker_examplemissions:
     flag1 = 1

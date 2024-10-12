@@ -12,30 +12,26 @@ init python:
         
         f_name=(renpy.open_file(code_path))
         dom=ElementTree.parse(f_name)
-        print("----parsing-----")
-        #ElementTree.dump(dom)
         jumplabel = dom.find('jumplabel').text
-        print(jumplabel)
         activationdate = int(dom.find('activationdate').text)
-        print(activationdate)
         location = dom.find('location').text
-        print(location)
         actors = dom.find('actors').text
-        
         IsActive = bool(dom.find('IsActive').text)
-        print(IsActive)
+        information = []
+        information.append(dom.find('information/title').text)
+        information.append(dom.find('information/body').text)
+        information.append(dom.find('information/image').text)
         
-
+        Story_Mission(jumplabel,activationdate,location,actors,IsActive,information)
         
-        
-        
-        #print(actors)
-        
-        #print(information)
         
         pass
 
-#default examplemission3 = mission_from_xml("example_mission3.xml")
+default examplemission3 = mission_from_xml("example_mission3.xml")
+
+label example_mission3:
+    "yeah"
+    return
 
 
 

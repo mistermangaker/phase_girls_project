@@ -120,10 +120,10 @@ init -10 python:
         isactive refers to whether or not the mission will appear in the availible mission pool for the mission select screen to show
         ---
         """
-        def __init__(self, jumplabel: str, activationdate: int, location: str, actors: list, IsActive: bool,information = ["title","information about the mission","mt.png"]):
+        def __init__(self, jumplabel: str, activationdate: int, location: str, actorsstring, IsActive: bool,information = ["title","information about the mission","mt.png"]):
             super().__init__(jumplabel,activationdate,IsActive)
             self.location = location
-            self.actors = actors
+            self.actorsstring = actorsstring
             self.type = "story"
             self.information = information
             missionslist_repository.append(self)
@@ -133,7 +133,20 @@ init -10 python:
         functions
         usuage: missionname.functionname()
         """
-        
+        @property
+        def actors(self):
+            #print("starting actors")
+            newactorlist = []
+            templist = self.actorsstring.split(",")
+            #print(templist)
+            for i in templist:
+                for b in system_actorslist:
+                    #print("checking"+b.actorname)
+                    if i == str(b.actorname):
+                        #print("appending to list")
+                        newactorlist.append(b)
+            #print(newactorlist)
+            return newactorlist
         
         def Appened_story_information(self,new_information):
             """

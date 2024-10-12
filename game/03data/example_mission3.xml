@@ -3,7 +3,7 @@
     <jumplabel>example_mission3</jumplabel>
     <activationdate>0</activationdate>
     <location>kitchen</location>
-    <actors>lia_actor,lumi_actor</actors>
+    <actors>lia,lumi</actors>
 <IsActive>True</IsActive>
 <information>
     <title>example mission part 3</title>
