@@ -1,6 +1,6 @@
 init python:
     def saveactornames(missionobject,actorlist):
-        missionobject.actors = [ ]
+        #missionobject.actors = [ ]
         newactorlist = []
         actorlist.strip()
         templist = actorlist.split(",")
@@ -9,6 +9,16 @@ init python:
                 if i == b.actorname:
                     newactorlist.append(b)
         missionobject.actors= newactorlist
+    def saveactorstring(inputmission,inputvalue):
+        s=inputvalue
+        inputmission.actors=s
+        return
+    def savemetadata(inputmission,author_value,contributors_value,tags_value,title_value,body_value):
+        inputmission.author = author_value.split(",")
+        inputmission.contributors = contributors_value.split(",")
+        inputmission.tags = tags_value.split(",")
+        inputmission.information[0]=title_value
+        inputmission.information[1]=body_value
     def saveactivationdate(inputmission,inputvalue):
         s=int(inputvalue)
         inputmission.activationdate=s
@@ -96,47 +106,74 @@ screen searchbox(search):
 
 screen  DevMissionBoxes(i):
     frame:
-        hbox:
-            spacing 10
-            textbutton "edit":
-                action ShowTransient("missionedits",missiontoedit = i)
-            vbox:
-                text "type"
-                text "[i.type]"
-            vbox: 
-                text "Jump Label"
-                text "[i.jumplabel]"
-                textbutton "play":
-                    action Jump(i.jumplabel)
-            if i.type == "special":
+        vbox:
+            hbox:
+                spacing 10
+                textbutton "edit":
+                    action ShowTransient("missionedits",missiontoedit = i)
                 vbox:
-                    text "activation tag"
-                    text _("[i.activationtag]")
-                
-            vbox:
-                text "activation date"
-                text _("[ i.activationdate]")
-            
-            if i.type == "story":
+                    text "type"
+                    text "[i.type]"
+                vbox: 
+                    text "Jump Label"
+                    text "[i.jumplabel]"
+                    textbutton "play":
+                        action Jump(i.jumplabel)
+                if i.type == "special":
+                    vbox:
+                        text "activation tag"
+                        text _("[i.activationtag]")
+                    
                 vbox:
-                    text "location tag"
-                    text _("[i.location]")
+                    text "activation date"
+                    text _("[ i.activationdate]")
                 
-            if i.type == "story":
+                if i.type == "story":
+                    vbox:
+                        text "location tag"
+                        text _("[i.location]")
+                    
+                if i.type == "story":
+                    vbox:
+                        text "actor list"
+                        for a in i.actors:
+                            text _("[a.actorname]")
+                            
                 vbox:
-                    text "actor list"
-                    for a in i.actors:
-                        text _("[a.actorname]")
-                        
-            vbox:
-                text "Is Active"
-                textbutton _("toggle active"):
-                    action ToggleField(i,"IsActive",true_value=True,false_value =False)
-                
-            vbox:
-                text "completed"
-                textbutton _("toggle completed"):
-                    action ToggleField(i,"completed",true_value=True,false_value =False)
+                    text "Is Active"
+                    textbutton _("toggle active"):
+                        action ToggleField(i,"IsActive",true_value=True,false_value =False)
+                    
+                vbox:
+                    text "completed"
+                    textbutton _("toggle completed"):
+                        action ToggleField(i,"completed",true_value=True,false_value =False)
+            hbox:
+                if i.type == "story":
+                    vbox:
+                        text "title"
+                        text _("[i.information[0]]")
+                    vbox:
+                        text "body"
+                        viewport:
+                            mousewheel True
+
+                            
+                            xysize(200,100)
+                            
+                            text _("[i.information[1]]")
+                    vbox:
+                        text "location tag"
+                        text _("[i.author]")
+                    vbox:
+                        text "location tag"
+                        text _("[i.contributors]")
+                    vbox:
+                        text "location tag"
+                        text _("[i.tags]")
+                    
+                    
+
 
                     
 
@@ -148,17 +185,22 @@ screen missionedits(missiontoedit):
             $ actorlist.append(a.actorname)
         default location = FieldInputValue(missiontoedit,"location")
         #default actorslist = str(actorlist)
-        #default actors = ",".join(actorlist)
-        #default actors_value = ScreenVariableInputValue("actors")
-        default title = FieldInputValue(missiontoedit,"information[0]")
-        default body = FieldInputValue(missiontoedit,"information[1]")
-        default author = FieldInputValue(missiontoedit,"author")
-        default contributors = FieldInputValue(missiontoedit,"contributors")
-        default tags = FieldInputValue(missiontoedit,"tags")
+        default actors = ",".join(actorlist)
+        default actors_value = ScreenVariableInputValue("actors")
+        default title = (missiontoedit.information[0])
+        default title_value = ScreenVariableInputValue("title")
+        default body = (missiontoedit.information[1])
+        default body_value = ScreenVariableInputValue("body")
+        default author = ",".join(missiontoedit.author)
+        default author_value = ScreenVariableInputValue("author")
+        default contributors = ",".join(missiontoedit.contributors)
+        default contributors_value = ScreenVariableInputValue("contributors")
+        default tags = ",".join(missiontoedit.tags)
+        default tags_value = ScreenVariableInputValue("tags")
 
         #default actors_value = FieldInputValue(missiontoedit,"actorsstring")
-        default actors = ",".join(actorlist)
-        default actors_value = FieldInputValue(missiontoedit,"actors")
+        #default actors = ",".join(actorlist)
+        #default actors_value = FieldInputValue(missiontoedit,"actors")
     if missiontoedit.type == "special":
         default time = FieldInputValue(missiontoedit,"activationtag")
     
@@ -225,41 +267,39 @@ screen missionedits(missiontoedit):
                         vbox:
                             text "title"
                             button:
-                                action actors_value.Toggle()
+                                action title_value.Toggle()
                                 input:
-                                    value actors_value
+                                    value title_value
                         vbox:
                             text "body"
                             button:
-                                action actors_value.Toggle()
+                                action body_value.Toggle()
                                 input:
-                                    value actors_value
+                                    value body_value
                         text "metadata"
                         vbox:
                             text "authors"
                             button:
-                                action actors_value.Toggle()
+                                action author_value.Toggle()
                                 input:
-                                    value actors_value
+                                    value author_value
                         vbox:
                             text "contributors"
                             button:
-                                action actors_value.Toggle()
+                                action contributors_value.Toggle()
                                 input:
-                                    value actors_value
+                                    value contributors_value
                         vbox:
                             text "tags"
                             button:
-                                action actors_value.Toggle()
+                                action tags_value.Toggle()
                                 input:
-                                    value actors_value
+                                    value tags_value
             textbutton "return":
                 if missiontoedit.type == "story":
-                    action Function(saveactivationdate,missiontoedit,activationdate),Function(saveactornames,missiontoedit,actors),Hide("missionedits")
+                    action Function(saveactivationdate,missiontoedit,activationdate),Function(saveactorstring,missiontoedit,actors),Function(savemetadata,missiontoedit,author,contributors,tags,title,body),Hide("missionedits")
                 else:
                     action Function(saveactivationdate,missiontoedit,activationdate),Hide("missionedits")
-
-
 
 
 
