@@ -1,9 +1,11 @@
-default system_actorslist = []
+
 init python:
     class actors(object):
+        #system_actorslist = []
         def __init__(self, actorname, portrait="mt.png",currentlocation = None, defaultlocation = None):
             self.actorname =actorname
             self.portrait = portrait
+            self.currentaction = None
             self.currentlocation = currentlocation
             self.defaultlocation = defaultlocation
             if self.portrait == "mt.png" or None:
@@ -16,7 +18,8 @@ init python:
             
             system_actorslist.append(self)
             
-    def findactors(mission_actorlist):
+    
+    def return_actors_portrait(mission_actorlist):
         actorportrait = []
         temp_mission_actorlist = []
         for c in mission_actorlist:
@@ -26,6 +29,25 @@ init python:
                 if i == b.actorname:
                     actorportrait.append(b.portrait)
         return actorportrait
+
+    def place_actor_at_default_location(actor,unused_actor_list):
+        if not isinstance(actor,actors):
+            for i in system_actorslist:
+                if actor == i.actorname:
+                    actor = i 
+                    break
+        i.currentlocation = i.defaultlocation
+        return i.currentlocation
+        
+
+    def find_actors_current_location(actor):
+        if not isinstance(actor,actors):
+            for i in system_actorslist:
+                if actor == i.actorname:
+                    actor = i 
+                    break
+        return i.currentlocation
+       
     
     def find_default_actor_portrait(actor):
         """

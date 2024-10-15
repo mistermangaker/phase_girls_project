@@ -1,6 +1,6 @@
 init python:
     def saveactornames(missionobject,actorlist):
-        #missionobject.actors = [ ]
+        missionobject.actors = [ ]
         newactorlist = []
         actorlist.strip()
         templist = actorlist.split(",")
@@ -8,7 +8,7 @@ init python:
             for b in system_actorslist:
                 if i == b.actorname:
                     newactorlist.append(b)
-        missionobject.actorsstring = newactorlist
+        missionobject.actors= newactorlist
     def saveactivationdate(inputmission,inputvalue):
         s=int(inputvalue)
         inputmission.activationdate=s
@@ -143,14 +143,22 @@ screen  DevMissionBoxes(i):
 screen missionedits(missiontoedit):
     modal True
     if missiontoedit.type == "story":
-        #default actorlist = []
-        #for a in missiontoedit.actors:
-            #$ actorlist.append(a.actorname)
+        default actorlist = []
+        for a in missiontoedit.actors:
+            $ actorlist.append(a.actorname)
         default location = FieldInputValue(missiontoedit,"location")
+        #default actorslist = str(actorlist)
         #default actors = ",".join(actorlist)
-        default actors_value = FieldInputValue(missiontoedit,"actorsstring")
-        #default actors = ",".join(actorlist)
-        #default actors_value = FieldInputValue(missiontoedit,"actors")
+        #default actors_value = ScreenVariableInputValue("actors")
+        default title = FieldInputValue(missiontoedit,"information[0]")
+        default body = FieldInputValue(missiontoedit,"information[1]")
+        default author = FieldInputValue(missiontoedit,"author")
+        default contributors = FieldInputValue(missiontoedit,"contributors")
+        default tags = FieldInputValue(missiontoedit,"tags")
+
+        #default actors_value = FieldInputValue(missiontoedit,"actorsstring")
+        default actors = ",".join(actorlist)
+        default actors_value = FieldInputValue(missiontoedit,"actors")
     if missiontoedit.type == "special":
         default time = FieldInputValue(missiontoedit,"activationtag")
     
@@ -162,54 +170,92 @@ screen missionedits(missiontoedit):
 
     frame:
         vbox:
-            spacing 10
-            vbox:
-                text "jump label"
-                button:
-                    action jumplabel.Toggle()
-                    input:
-                        value jumplabel
-                textbutton "jump to: [missiontoedit.jumplabel]":
-                    action Jump(missiontoedit.jumplabel)
-            vbox:
-                text "activation date"
-                button:
-                    action activationdate_value.Toggle()
-                    input:
-                        allow "1234567890"
-                        value activationdate_value
-            if missiontoedit.type == "story":
+            hbox:
+                spacing 10
                 vbox:
-                    text "location"
+                    text "jump label"
                     button:
-                        action location.Toggle()
+                        action jumplabel.Toggle()
                         input:
-                            value location
-            if missiontoedit.type == "story":
-                vbox:
-                    text "actors"
+                            value jumplabel
+                    textbutton "jump to: [missiontoedit.jumplabel]":
+                        action Jump(missiontoedit.jumplabel)
+                
+                    text "activation date"
                     button:
-                        action actors_value.Toggle()
+                        action activationdate_value.Toggle()
                         input:
-                            value actors_value
-            if missiontoedit.type == "special":
-                vbox:
-                    text "time"
-                    button:
-                        action time.Toggle()
-                        input:
-                            value time
-            vbox:
-                text "Is Active"
-                textbutton _("[missiontoedit.IsActive]"):
-                    action ToggleField(missiontoedit,"IsActive",true_value=True,false_value =False)
-            vbox:
-                text "completed"
-                textbutton _("[missiontoedit.completed]"):
-                    action ToggleField(missiontoedit,"completed",true_value=True,false_value =False)
+                            allow "1234567890"
+                            value activationdate_value
+                    if missiontoedit.type == "story":
+                    
+                        text "location"
+                        button:
+                            action location.Toggle()
+                            input:
+                                value location
+                    if missiontoedit.type == "story":
+                    
+                        text "actors"
+                        button:
+                            action actors_value.Toggle()
+                            input:
+                                value actors_value
+                    if missiontoedit.type == "special":
+                    
+                        text "time"
+                        button:
+                            action time.Toggle()
+                            input:
+                                value time
+                    
+                    text "Is Active"
+                    textbutton _("[missiontoedit.IsActive]"):
+                        action ToggleField(missiontoedit,"IsActive",true_value=True,false_value =False)
+            
+                
+                    text "completed"
+                    textbutton _("[missiontoedit.completed]"):
+                        action ToggleField(missiontoedit,"completed",true_value=True,false_value =False)
+
+                if missiontoedit.type == "story":  
+                    vbox:
+                    
+                        text"information"
+                        vbox:
+                            text "title"
+                            button:
+                                action actors_value.Toggle()
+                                input:
+                                    value actors_value
+                        vbox:
+                            text "body"
+                            button:
+                                action actors_value.Toggle()
+                                input:
+                                    value actors_value
+                        text "metadata"
+                        vbox:
+                            text "authors"
+                            button:
+                                action actors_value.Toggle()
+                                input:
+                                    value actors_value
+                        vbox:
+                            text "contributors"
+                            button:
+                                action actors_value.Toggle()
+                                input:
+                                    value actors_value
+                        vbox:
+                            text "tags"
+                            button:
+                                action actors_value.Toggle()
+                                input:
+                                    value actors_value
             textbutton "return":
                 if missiontoedit.type == "story":
-                    action Function(saveactivationdate,missiontoedit,activationdate),Hide("missionedits")
+                    action Function(saveactivationdate,missiontoedit,activationdate),Function(saveactornames,missiontoedit,actors),Hide("missionedits")
                 else:
                     action Function(saveactivationdate,missiontoedit,activationdate),Hide("missionedits")
 

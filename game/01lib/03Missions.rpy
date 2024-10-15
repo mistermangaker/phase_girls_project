@@ -1,9 +1,11 @@
 init -10 python:
     import collections
     import math
+    
     #this is the game list that the mission objescts are added to automatically when a new missions object is created
     class Mission(object):
-        def __init__(self, jumplabel: str, activationdate: int, IsActive: bool):
+        
+        def __init__(self, jumplabel: str, activationdate: int, IsActive: bool,author =["None"],contributors= ["None"],tags= ["None"],chapter="one"):
             self.jumplabel = jumplabel
             #jumplabel is the label that the game sends you to when the mission is selected on the mission select screen
             self.IsActive = IsActive
@@ -11,8 +13,52 @@ init -10 python:
             self.activationdate = activationdate
             self.completed = False
             self.type = "Base"
+            self.contributors = contributors 
+            self.tags = tags
+            self.author = author
+            self.chapter = chapter
             alltype_missions_list_repository.append(self)
+        
+        @property
+        def author(self):
+            return self._author
+            pass
+        @author.setter
+        def author(self,value):
+            if not value:
+                self._author = ["None"]
+            if isinstance(value,(str)):
+                self._author = value.split(',')
+            else:
+                self._author = value
+        @property
+        def tags(self):
+            return self._tags
+            pass
+        @tags.setter
+        def tags(self,value):
+            if not value:
+                self._tags = ["None"]
 
+            if isinstance(value,(str)):
+                self._tags = value.split(',')
+            else:
+                self._tags = value
+        @property
+        def contributors(self):
+            return self._contributors
+            pass
+        @contributors.setter
+        def contributors(self,value):
+            if not value:
+                self._contributors = ["None"]
+
+            if isinstance(value,(str)):
+                self._contributors = value.split(',')   
+            else:
+                self._contributors = value
+                
+        
         def SetActivationDate(self, Totaldays):
             """
             SetActivationDate(Totaldays)
@@ -52,7 +98,24 @@ init -10 python:
             for i in missions:
                 if not i.completed:
                     return False
-            SetActive()
+            self.activationdate = 0
+            self.IsActive =True
+            return True
+
+        def Conditional_activate_percentage(threshold,self,*missions):
+            whole = 0
+            notcompleted = 0
+            for i in missions:
+                whole += 1
+                if not i.completed:
+                    notcompleted +=1
+            ratio = 100*float(notcompleted)/float(whole)
+            if ratio >= threshold:
+                self.activationdate = 0
+                self.IsActive =True
+            else:
+                return False
+            
             
 
         @staticmethod
@@ -120,21 +183,45 @@ init -10 python:
         isactive refers to whether or not the mission will appear in the availible mission pool for the mission select screen to show
         ---
         """
-        def __init__(self, jumplabel: str, activationdate: int, location: str, actorsstring, IsActive: bool,information = ["title","information about the mission","mt.png"]):
-            super().__init__(jumplabel,activationdate,IsActive)
+        def __init__(self, jumplabel: str, activationdate: int, location: str, actors, IsActive: bool,author =["None"],contributors= ["None"],tags= ["None"],chapter="one",information = ["title","information about the mission","mt.png"]):
+            super().__init__(jumplabel,activationdate,IsActive,author,contributors,tags,chapter)
             self.location = location
-            self.actorsstring = actorsstring
+            self.actors = actors
             self.type = "story"
             self.information = information
+            
             missionslist_repository.append(self)
-         
+            
+        def __str__(self):
+            
+            return f"(jumplabel={self.jumplabel!r})"
         
         """
         functions
         usuage: missionname.functionname()
         """
+                
         @property
         def actors(self):
+            return self._actors
+           
+        @actors.setter
+        def actors(self,value):
+            if isinstance(value,(list)):
+                self._actors = value
+            newactorlist = []
+            templist = value.split(',')
+            for i in templist:
+                for b in system_actorslist:
+                    #print("checking"+b.actorname)
+                    if i == str(b.actorname):
+                        #print("appending to list")
+                        newactorlist.append(b)
+            self._actors = newactorlist
+
+                
+        @property
+        def actors2(self):
             #print("starting actors")
             newactorlist = []
             templist = self.actorsstring.split(",")
@@ -147,7 +234,68 @@ init -10 python:
                         newactorlist.append(b)
             #print(newactorlist)
             return newactorlist
+        @classmethod
+        def mission_from_xml(cls,xml_path):
+            import os
+            from xml.etree import ElementTree
+            
+            if renpy.loadable('03data/'+xml_path):
+                code_path = '03data/'+xml_path
+            elif renpy.loadable(xml_path):
+                code_path = xml_path
+            else:
+                raise Exception("can not find file: "+xml_path)
+            
+            f_name=(renpy.open_file(code_path))
+            dom=ElementTree.parse(f_name)
+            root = dom.getroot()
+            
+
+            
+            jumplabel = dom.find('jumplabel').text
+            activationdate = int(dom.find('activationdate').text)
+            location = dom.find('location').text
+            actors = ""
+            for i in dom.findall("actors/li"):
+                actors += str(i.text)+','
+            dom.find('actors').text
+            IsActive = bool(dom.find('IsActive').text)
+            information = []
+            information.append(dom.find('information/title').text)
+            information.append(dom.find('information/body').text)
+            information.append(dom.find('information/image').text)
+            
+            chapter = []
+            for i in dom.findall("metadata/chapter/li"):
+                chapter.append(i.text)
+            
+            authors = []
+            for i in dom.findall("metadata/authors/li"):
+                authors.append(i.text)
+            
+            contributors = []
+            for i in dom.findall("metadata/contributors/li"):
+                contributors.append(i.text)
         
+            tags = []
+            for i in dom.findall("metadata/tags/li"):
+                tags.append(i.text)
+            
+            print(actors)
+            print(authors)
+            print (contributors)
+            print (tags)
+            print (chapter)
+
+            
+
+            
+            return cls(jumplabel,activationdate,location,actors,IsActive,authors,contributors,tags,chapter,information,)
+        
+        
+        
+        pass
+
         def Appened_story_information(self,new_information):
             """
             pass in a list of two strings and an image
@@ -186,7 +334,7 @@ init -10 python:
         ---
         """
         def __init__(self, activationtag: str, jumplabel: str, activationdate: int, IsActive: bool):
-            super().__init__(jumplabel,activationdate,IsActive)
+            super().__init__(jumplabel,activationdate,IsActive,author,contributors,tags,chapter)
             self.activationtag = activationtag
             self.inserted = False
             specialmissionslist_repository.append(self)
@@ -323,23 +471,7 @@ init -10 python:
             todays_selected_missions_labels.append(i.jumplabel)
         return todays_selected_missions_labels
 
-#a list for the current game save holding a conjoined list holding both special and story missions
-default alltype_missions_list_repository = [ ]
 
-#a list for the current game save holding all story missions
-default missionslist_repository = [ ]      
-#a list for the current game save holding only the currentl active story missions
-default currently_active_missions_list = [ ]  
-#a list for the current game save holding only missions that are selected for the current day
-default todays_selected_missions = [] 
-
-#a list for the current game save holding all special missions
-default specialmissionslist_repository = [ ] 
-
-#a deque for the current save that holds a the special missions queued to be triggered in the morning before the main mission select screen
-default specialsqueueday = collections.deque([])
-#a deque for the current save that holds a the special missions queued to be triggered at night after the day has ended
-default specialsqueuenight = collections.deque([])
 
         
        

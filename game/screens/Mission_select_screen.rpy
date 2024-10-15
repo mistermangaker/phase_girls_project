@@ -176,7 +176,7 @@ screen select_buttonhover(mission,x,y):
             add "missionavailible_image"
             vbox:
                 at selectbounce2
-                default roomactors = findactors(mission.actors)
+                default roomactors = return_actors_portrait(mission.actors)
                 for b in roomactors:
                     add b:
                         xysize(50,50)
