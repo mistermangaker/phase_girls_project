@@ -163,13 +163,13 @@ screen  DevMissionBoxes(i):
                             
                             text _("[i.information[1]]")
                     vbox:
-                        text "location tag"
+                        text "author(s)"
                         text _("[i.author]")
                     vbox:
-                        text "location tag"
+                        text "contributors"
                         text _("[i.contributors]")
                     vbox:
-                        text "location tag"
+                        text "tag"
                         text _("[i.tags]")
                     
                     

@@ -183,7 +183,7 @@ init -10 python:
         isactive refers to whether or not the mission will appear in the availible mission pool for the mission select screen to show
         ---
         """
-        def __init__(self, jumplabel: str, activationdate: int, location: str, actors, IsActive: bool,author =["None"],contributors= ["None"],tags= ["None"],chapter="one",information = ["title","information about the mission","mt.png"]):
+        def __init__(self, jumplabel: str, activationdate, location: str, actors, IsActive: bool,author =["None"],contributors= ["None"],tags= ["None"],chapter="one",information = ["title","information about the mission","mt.png"]):
             super().__init__(jumplabel,activationdate,IsActive,author,contributors,tags,chapter)
             self.location = location
             self.actors = actors
@@ -253,7 +253,15 @@ init -10 python:
 
             
             jumplabel = dom.find('jumplabel').text
-            activationdate = int(dom.find('activationdate').text)
+            if not jumplabel:
+                raise Exception(xml_path + " can't be processed has no jump label")
+            activationdate = dom.find('activationdate').text
+            if not activationdate:
+                activationdate = None
+
+            if not activationdate.isdigit():
+                activationdate = None
+            
             location = dom.find('location').text
             actors = ""
             for i in dom.findall("actors/li"):
@@ -333,7 +341,7 @@ init -10 python:
         isactive refers to whether or not the mission will appear in the availible mission pool for the mission select screen to show
         ---
         """
-        def __init__(self, activationtag: str, jumplabel: str, activationdate: int, IsActive: bool):
+        def __init__(self, activationtag: str, jumplabel: str, activationdate: int, IsActive: bool,author =["None"],contributors= ["None"],tags= ["None"],chapter="one"):
             super().__init__(jumplabel,activationdate,IsActive,author,contributors,tags,chapter)
             self.activationtag = activationtag
             self.inserted = False

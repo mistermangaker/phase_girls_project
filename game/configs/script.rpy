@@ -30,7 +30,7 @@ label daystart:
     $ calendar.AddDay(1)
     $ instantiatespecialsqueue()
     $ launchspecials(specialsqueueday)
-    #"lets see what is happening today in the phase connect household"
+    "lets see what is happening today in the phase connect household"
 label activate:
     $ sort_missions_to_activelist()
     $ assign_actors_to_mission()
@@ -45,7 +45,7 @@ label endday:
         "Go to bed":
             pass
     $ launchspecials(specialsqueuenight)
-    ""
+    
     jump daystart
 
     return

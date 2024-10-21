@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Short Stories From The Phase Connect Dormitory")
+define config.name = _("The Phase Connect streamer house")
 
 default persistent.debugmode = False
 ## Determines if the title given above is shown on the main menu screen. Set

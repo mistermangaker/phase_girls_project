@@ -299,7 +299,7 @@ screen navigation():
 
             textbutton _("Start") action Start()
             if persistent.debugmode:
-                textbutton _("quick launch") action ShowMenu("quick_launch")
+                textbutton _("Quick Start") action ShowMenu("quick_launch")
             
 
         else:

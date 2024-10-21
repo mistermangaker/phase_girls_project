@@ -1,10 +1,4 @@
 
-    
-default examplemission3 = Story_Mission.mission_from_xml("example_mission3.xml")
-
-label example_mission3:
-    "yeah"
-    return
 
 
 
