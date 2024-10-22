@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf8'?>
+
+<mission>
+    <jumplabel>tutorial_basics</jumplabel>
+    <activationdate>None</activationdate>
+    <location>entrance</location>
+    <actors>
+        <li>sakana</li>
+    </actors>
+    <IsActive>True</IsActive>
+    <information>
+        <title>Project Basics</title>
+        <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+        <image>None</image>
+    </information>
+    <metadata>
+        <authors>
+            <li>MisterMangaker</li>
+        </authors>
+
+        <chapter>
+            <li>1</li>
+        </chapter>
+    </metadata>
+</mission>

@@ -1,24 +1,24 @@
-default examplemission = Story_Mission("examplemission",0, "tenma_room","tenma,pippa",True,information=["The First Example Mission", "meant to show you how the code works","mt.png"],)
-default examplemission2 = Story_Mission("examplemission2",0, "pippa_room","sakana,shiina",True)
-default examplespecialmission1 = Special_Mission("night", "examplespecialmission1", None, True)
+#default examplemission = Story_Mission("examplemission",0, "tenma_room","tenma,pippa",True,information=["The First Example Mission", "meant to show you how the code works","mt.png"],)
+#default examplemission2 = Story_Mission("examplemission2",0, "pippa_room","shiina",True)
+#default examplespecialmission1 = Special_Mission("night", "examplespecialmission1", None, True)
     
-default examplemission3 = Story_Mission.mission_from_xml("example_mission3.xml")
-default examplemission4 = Story_Mission.mission_from_xml("example_mission4.xml")
-default examplemission5 = Story_Mission.mission_from_xml("example_mission5.xml")
-default examplemission6 = Story_Mission.mission_from_xml("example_mission6.xml")
-default examplemission7 = Story_Mission.mission_from_xml("example_mission7.xml")
+#default examplemission3 = Story_Mission.mission_from_xml_testing("example_mission3.xml",'mis1')
+#default examplemission4 = Story_Mission.mission_from_xml_testing("example_mission3.xml",'mis2')
+#default examplemission5 = Story_Mission.mission_from_xml("example_mission5.xml")
+#default examplemission6 = Story_Mission.mission_from_xml("example_mission6.xml")
+#default examplemission7 = Story_Mission.mission_from_xml("example_mission7.xml")
 
 
 
 label example_mission3:
     $ examplemission4.SetActive()
     "yeah3"
-    $ examplemission3.Complete()
+    $ examplemission3.SetComplete()
     return
 label example_mission4:
-    $ examplemission7.SetActive()
+    #$ examplemission7.SetActive()
     "yeah4"
-    $ examplemission4.Complete()
+    $ examplemission4.SetComplete()
     return
 label example_mission5:
     "yeah5"

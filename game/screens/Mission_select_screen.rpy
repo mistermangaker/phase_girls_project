@@ -43,7 +43,7 @@ screen mission_select_screen():
         fixed:
             add   "Mission_select_screen/mission_select_screen.png" 
             default tenma_room = providemission_info("tenma_room")
-            use mission_select_screen_buttons(tenma_room,(1150,200),"Mission_select_screen/bedroom1_%s.png",["Tenma's rooom", "this is an ordinary nothing special room", "mt.png"])
+            use mission_select_screen_buttons(tenma_room,(1150,200),"Mission_select_screen/bedroom1_%s.png",["Tenma's rooom", "This room belongs to Tenma Maemi the lovable adorable fox girl. \nShe is said to be the cutest idol in the world as long as she isn't talking", "mt.png"])
 
             default pippa_room = providemission_info("pippa_room")
             use mission_select_screen_buttons(pippa_room,(1300,200),"Mission_select_screen/bedroom2_%s.png",["Pippa's rooom", "this is an ordinary nothing special room", "mt.png"])
@@ -53,8 +53,8 @@ screen mission_select_screen():
             use mission_select_screen_buttons(bedroom3,(1480,200),"Mission_select_screen/bedroom3_%s.png",["empty room", "this is an ordinary nothing special room", "mt.png"])
             
 
-            default Shiina_room = providemission_info("Shiina_room")
-            use mission_select_screen_buttons(Shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
+            default shiina_room = providemission_info("shiina_room")
+            use mission_select_screen_buttons(shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
             
             default bedroom5 = providemission_info("bedroom5")
             use mission_select_screen_buttons(bedroom5,(820,520),"Mission_select_screen/bedroom5_%s.png",["empty room", "this is an ordinary nothing special room", "mt.png"])
@@ -99,12 +99,12 @@ screen mission_select_screen():
                 use select_buttonhover(pippa_room,1160,200) 
             if bedroom3:
                 use select_buttonhover(bedroom3,1320,200)
-            if Shiina_room:
-                use select_buttonhover(bedroom4,1440,200)
+            if shiina_room:
+                use select_buttonhover(shiina_room,1440,200)
             if bedroom5:
                 use select_buttonhover(bedroom5,720,520)
             if lumi_room:
-                use select_buttonhover(bedroom6,850,520)
+                use select_buttonhover(lumi_room,850,520)
             if bedroom7:
                 use select_buttonhover(bedroom7,1440,520)
             if bedroom8:
