@@ -248,12 +248,141 @@ label .didntwanttochoosetwo:
 
 
 label tutorial_Project_basics:
+    #sakana Jojo poses
+    "before we continue artists, writers, coders"
+
+    "know! your! rights!"
+
+    "all visual assets of this game are licensed under the “creative commons share alike license” which grants the right to all people to use, remix, and redistribute derivative works of these assets under the same license"
+
+    "that means is that by committing art to this project you give others working on this project the right to, reuse, copy, trace, modify, or add to, your art for the purposes of adding more content to this project or any current or future forks of this project so long as it is long as those projects are not for commercial gain."
+
+    "What that means is that. people can use or modify your shit. so if that doesn't sit right with you it would be advisable not to contribute to this project."
+
+    "Given that this project is an unlicensed fan game based on the intellectual property of  phase connect llc. we don't necessarily have any copyright to what we are making anyway. "
+
+    "hence why the actor mission framework this game is based on is a wholly separate project licensed under the MIT license."
+
+    "Coders it's recommended that you do the same for whatever unique mechanics you want to develop, or contribute to the actor mission framework directly "
+
+    "we will go over the acceptable content and the forking of this project to form your own version."
+
+    "As the main fork of this project. We as the main development team have an obligation to set a good example and run and moderate this project as well as reasonably possible. It is for that reason we will have these rules set out from the beginning for contributing to the project. "
+
+    "Naturally this means we will have to be selective about what we accept into the project. This however does not mean that we will attempt to or even have the ability to stop any forks or overhauls of this project by other 3rd party sources. This is an open source project and as such we encourage any and all who want to make their own fork of this project or update their version with code from this project. "
+
+    "rules for contributing code and other in game assets"
+
+    "If you wish to contribute code, modules, assets, or music which you do not own. you absolutely have to make sure that 1 the asset is under an MIT, creative commons license or equivalent. 2 if not under the previous that the rights holder is aware of its intended use and the fact that it will be redistributed for free. 3 that the original source of the code, asset, or music is placed in the proper credits section. "
+
+    "you can not contribute code, assets, or music if they do not fit those criteria. even if the original assets were paid for. "
+
+    "especially if the original assets were paid for. Most commercial licenses do not allow for the redistribution of the paid for intellectual property in an open source format."
+
+    "if the code or assets you provided do not fit those criteria. unfortunately they will not be allowed to be contributed or they will be removed if they had been previously contributed."
+
+
+
     return
 
 
 
 
 label tutorial_Project_framework:
+    #option 2 actor framework basics
+    "the absolute basics of the actor missions framework goes as follows. "
+
+    "each in-game “day” is divided into 3 parts. “morning”, “midday”, and “night” as of alpha 1 morning and night are just the beginning and end of code that runs the gameplay loop. and are trigger points for special missions."
+
+    "but in future they will potentially have further uses."
+
+    #show code here
+    "you declare a mission object like so:"
+
+
+    "there are two types of missions story and special "
+
+    "special missions are directly triggered by code while story missions are sorted and displayed on the mission select screen"
+    "The story mission object has many attributes the most important structurally are."
+
+    "jump label. location, activation date, actor list, display information. along with the less important attributes of author, credits, tags, and chapter." 
+
+    "along with the attributes completed and type which just let's the game know if it's completed or not and which type of mission it is."
+
+    "These will be the beginning where the game will jump to begin the mission. note each one of these has to be unique. these are internal references only and won't be seen. it should be at the very start of the mission. "
+
+    "treat them like a mission ID and only have one global label per mission and have all other labels be local labels. "
+
+    "For more information about that will be provided in the “about writing” mission"
+
+    "location is very simple. is a tag that let's the game know which where the start of the mission should take place. "
+
+    "the actor mission framework only allows for one mission to take place in one location per day. with other missions being sorted so only missions that take place in other locations can be shown."
+
+    "activation date is the day in total game days that the mission will get activated and be added to the pool of available missions. "
+
+    "it can be used to have missions become available after certain number of days have passed in game or happen on a particular day. "
+
+    "But usually it's used to with the function “delay_activation_date” to make a mission only become available a set number of days after whatever triggered it "
+
+    "a more in depth explanation of all the functions will be provided in the “about writing” mission"
+
+    "next up is actor list which is written as either a string of actors separated by commas like so “actor1,actor2,actor3” or as a python list \[“actor1”,”actor2”,”actor3”\] "
+
+    "the actor list is a list of actors who will be present at the start of the mission. an actor can only be in one place at a time and sorted so missions with other actors will be displayed. "
+
+    "will be used in conjunction with the location Tag ensures that only missions with unique actors and in unique locations are present at any given time."
+
+    "this is to make sure less popular talents can also get screen time and missions aren't biased toward the most popular talents"
+
+    "finally display information which has two attributes, title and body. this is the information that holds the title and the preamble that is displayed in the mission select screen."
+
+    "Finally we are onto the mission metadata. which is used in sorting and organizing missions "
+
+    ###this needs review###
+
+
+    "author(s): a string or python list of one or more main authors of the mission. used for sorting and assigning credit."
+
+    "format for strings “author1,author2,author3” format for python lists \[“author1”,“author2”,“author3”\]"
+
+    "credits: a string or list of one or more contributors. used for sorting and assigning credit. "
+
+    "format for strings separate the credits from the contributors with a ‘,’ and the credit + contributors with a comma"
+
+    "an example would be:“music:bob,music:lia,art:john,background art:mike”"
+
+    "format for python list separate the credit and the contributor with a ‘:’ "
+
+
+    "an example would be:\[“music:bob”,”music:lia”,”art:john”,”background art:mike”\]"
+
+    "The credits can be for whatever you like. "
+
+    "next up are mission tags, which is a string or a python list of content tags that tell the game what the content of your mission will have. used for sorting and content classification purposes "
+
+    "Finally there is the chapter which tells the game which groupings of missions should be made available for viewing used for Grouping missions by theme, special event or otherwise. "
+
+    "Now that you've written your mission you might be noticing that it's kind of cluttered. there is a neater organization method for creating missions using XML files."
+    menu:
+
+        "Would you like an advanced tutorial about using xml files?"
+        "yes":
+            pass
+        "no":
+            pass
+
+    #go to somewhere else for xml
+
+    "next up and less exciting is declaring the special missions these special missions are declared as follows"
+
+    "and have these attributes. jump label, activation day, chapter and activation tag. along with the attributes completed and type."
+
+    "The only attribute which hasn't Been covered already is activation tag, which just tells the game whether it takes place in the morning or at night and they happen automatically based on a queue system."
+
+    "future planned additions to the framework will contain: a system to assign actors to other places besides the starting location. add in unique ambient noises to the map and stories based on what other missions were happening that day and where the player currently is. additions to the over world map to display images on the world map holiday missions/chapters that display on certain in-game or real life days"
+
+
     return
 
 
@@ -266,6 +395,51 @@ label tutorial_Project_art:
 
 
 label tutorial_Project_writing:
+#about writing 
+    "in this section we will discuss labels, flow control, and using the actor missions framework to help direct the flow of these stories."
+
+    "to start off with. the renpy game engine uses special names to use as the start of blocks of dialog called labels. "
+
+    "a label contains all the dialogue, art, screens, and various code that the game will use for the story."
+
+    "All labels and ingame variables have to be unique. with a single dev team this is decently easy to achieve. but with a large open source project like this. it will quickly get out of hand if everyone used generic labels and names for their stories and variables "
+
+    "this is why we ask that all writes use renpy's “local label” feature to write all of their stories and only have a single global label that their mission points to in the code. "
+
+    "it's very easy to do by just appending the name of your label with a period ‘.’ and making sure that the label is below the global label in the story rpy file you write it in."
+
+    "the same with variables. so when writing your stories used one of pythons built in features called “namespace” to add in a prefix to your variables this will allow you have as many variables as you want without bothering other programmers "
+
+
+    "For story specific displayables, event art and backgrounds, please place them in the same folder as the story.rpy file and not in the images folder (where generic images and characters will be placed) "
+
+    "and for the displayable name prefix it with either the name of the story, or your name."
+
+    "next we will talk about the custom functions that the actor mission framework provides."
+
+    "SetActive(mission) and SetInactive(mission) \n activates or deactivates the provided mission. as you can imagine this is helpful for actually progressing the story along."
+    
+    "SetCompleted(mission)\n sets a mission as completed. just remeber that missions DO NOT automatically get set as completed when they are played. this is done for various reasons but primarily its for missions that are meant to be replayed"
+
+    "Check_completed_all(*args) \n takes one or multiple missions as arguments and returns true if they are all completed"
+
+    "Check_completed_percentage(threshold,*args) \n takes a number between 0 and 100 as the threshold and one or multiple missions as arguments and returns true if the percentage of the missions completed is above the specified percentage. "
+
+    "used primarily for additional dialogue or choices in stories. or to conditionally enable other missions."
+
+    "Conditional_activate(mission,*args) \n takes a mission and a list of other missions to check against as arguments. activates the specified mission if all provided missions are completed"
+
+    "Conditional_activate_percentage(threshold,mission,*args) \n takes a number between 0 and 100 as the threshold. a mission to activate and a list of other missions to check against as arguments. activates the specified mission if all provided missions are completed"
+
+    "SetActivationDate(mission,totaldays) Delayactive(mission,days) \n takes a single mission instance as an argument either sets the date in total days from the start of the game or activate it after a specified number of days. "
+
+    "it's preferred if the missions are set an ambiguous amount of time apart from each other. as they are selected semi randomly so specifying definite amount of time will cause issues"
+
+    "Priorityactive(specialmission)\n takes a single special mission as an argument and inserts it at the front of the special missions queue for whatever time of day it's set."
+
+    "used primarily for special missions that need to be done that day. or immediately the following morning. (special mission queuing only takes place during the mornings to reduce unnecessary sorting. "
+
+
     return
 
 

@@ -1,6 +1,6 @@
 #default examplemission = Story_Mission("examplemission",0, "tenma_room","tenma,pippa",True,information=["The First Example Mission", "meant to show you how the code works","mt.png"],)
 #default examplemission2 = Story_Mission("examplemission2",0, "pippa_room","shiina",True)
-#default examplespecialmission1 = Special_Mission("night", "examplespecialmission1", None, True)
+default examplespecialmission1 = Special_Mission("night", "examplespecialmission1", None, True,["mistermangaker"])
     
 #default examplemission3 = Story_Mission.mission_from_xml_testing("example_mission3.xml",'mis1')
 #default examplemission4 = Story_Mission.mission_from_xml_testing("example_mission3.xml",'mis2')

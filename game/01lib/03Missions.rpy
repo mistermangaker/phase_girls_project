@@ -5,7 +5,7 @@ init -10 python:
     #this is the game list that the mission objescts are added to automatically when a new missions object is created
     class Mission(object):
         
-        def __init__(self, jumplabel: str, activationdate: int, IsActive: bool,author =["None"],contributors= ["None"],tags= ["None"],chapter="one"):
+        def __init__(self, jumplabel: str, activationdate = None , IsActive = False,author =["None"],contributors= ["None"],tags= ["None"],chapter="one"):
             self.jumplabel = jumplabel
             #jumplabel is the label that the game sends you to when the mission is selected on the mission select screen
             self.IsActive = IsActive
@@ -17,6 +17,7 @@ init -10 python:
             self.tags = tags
             self.author = author
             self.chapter = chapter
+
             alltype_missions_list_repository.append(self)
         
         @property
@@ -183,24 +184,55 @@ init -10 python:
         isactive refers to whether or not the mission will appear in the availible mission pool for the mission select screen to show
         ---
         """
-        def __init__(self, jumplabel: str, activationdate, location: str, actors, IsActive: bool,author =["None"],contributors= ["None"],tags= ["None"],chapter="one",information = ["title","information about the mission","mt.png"]):
+        def __init__(self, jumplabel, location, actors, activationdate = None, IsActive = False,author =["None"],contributors= ["None"],tags= ["None"],chapter="one",information = ["title","information about the mission","mt.png"]):
             super().__init__(jumplabel,activationdate,IsActive,author,contributors,tags,chapter)
+            self.type = "story"
+            
             self.location = location
             self.actors = actors
-            self.type = "story"
-            self.information = information
-            
+            if information == None:
+                self.information =["title","information about the mission","mt.png"]
+            else:
+                self.information = information
             missionslist_repository.append(self)
+            if len(author) == 0:
+                authors = ["None"]
+            if len(contributors) == 0:
+                self.contributors = ["None"]
+            if len(tags) == 0:
+                self.tags = ["None"]
             
-        def __str__(self):
             
-            return f"(jumplabel={self.jumplabel!r})"
+
+        def __repr__(self):
+            return f'Story_Mission(\'{self.jumplabel}\',{self.location}\',{self.actors_string}\',{self.activationdate}\', {self.IsActive}\', {self.author}\', {self.contributors}\', {self.tags}\', {self.chapter}\', {self.information})'
+                
+        
         
         """
         functions
         usuage: missionname.functionname()
         """
-                
+        
+        @property
+        def metadata(self):
+            metadata = []
+            metadata.append(self.location)
+            metadata.extend(self.actors_string)
+            metadata.extend(self.author)
+            metadata.extend(self.contributors)
+            metadata.extend(self.tags)
+            return [i for i in metadata if i.lower() != 'none']
+
+        @property
+        def actors_string(self):
+            templist = []
+            for i in self.actors:
+                templist.append(i.actorname) 
+            return templist
+
+
+
         @property
         def actors(self):
             return self._actors
@@ -283,10 +315,15 @@ init -10 python:
                 activationdate = None
             
             location = dom.find('location').text
+            if not location:
+                raise Exception("story_Mission requires a location")
+            
             actors = ""
             for i in dom.findall("actors/li"):
                 actors += str(i.text)+','
-            dom.find('actors').text
+            if not actors:
+                raise Exception("story_Mission requires an actor list")
+            
             IsActive = bool(dom.find('IsActive').text)
             information = []
             information.append(dom.find('information/title').text)
@@ -309,6 +346,7 @@ init -10 python:
             for i in dom.findall("metadata/tags/li"):
                 tags.append(i.text)
             
+
             #print(actors)
             #print(authors)
             #print (contributors)
@@ -318,7 +356,7 @@ init -10 python:
             
 
             
-            return cls(jumplabel,activationdate,location,actors,IsActive,authors,contributors,tags,chapter,information,)
+            return cls(jumplabel,location,actors,activationdate,IsActive,authors,contributors,tags,chapter,information,)
        
 
         def Appened_story_information(self,new_information):
@@ -358,13 +396,26 @@ init -10 python:
         isactive refers to whether or not the mission will appear in the availible mission pool for the mission select screen to show
         ---
         """
-        def __init__(self, activationtag: str, jumplabel: str, activationdate: int, IsActive: bool,author =["None"],contributors= ["None"],tags= ["None"],chapter="one"):
+        def __init__(self, jumplabel: str, activationtag = "day", activationdate = None , IsActive = False ,author =["None"],contributors= ["None"],tags= ["None"],chapter="one"):
             super().__init__(jumplabel,activationdate,IsActive,author,contributors,tags,chapter)
             self.activationtag = activationtag
             self.inserted = False
             specialmissionslist_repository.append(self)
             self.type = "special"
             
+            
+        
+        def __repr__(self):
+            return f'Special_Mission(\'{self.activationtag}\', {self.jumplabel}\', {self.activationdate}\', {self.IsActive}\', {self.author}\', {self.contributors}\', {self.tags}\', {self.chapter})'
+
+
+        @property
+        def metadata(self):
+            metadata = []
+            metadata.extend(self.author)
+            metadata.extend(self.contributors)
+            metadata.extend(self.tags)
+            return [i for i in metadata if i.lower() != 'none'] 
         """
         functions
         usuage: missionname.functionname()
@@ -382,6 +433,81 @@ init -10 python:
                 specialsqueueday.appendleft(self.jumplabel)
             if self.activationtag == "night":
                 specialsqueuenight.appendleft(self.jumplabel)
+
+        def mission_from_xml(cls,xml_path,identifier = None):
+            """
+            usage:
+            Story_Mission.mission_from_xml(path,identifier = None)
+            takes in a file name from the "data" folder or an override path to the file location in the game directory
+            example:
+            Story_Mission.mission_from_xml('xmlfile.xml')
+            or 
+            Story_Mission.mission_from_xml('missions/mymissionfolder/xmlfile.xml')
+            takes an optional arbitrary string known as an 'identifier' which is used to identify the mission if the xml file has multiple missions
+            example:
+            Story_Mission.mission_from_xml('xmlfile.xml') -> will always take the first mission it finds
+            Story_Mission.mission_from_xml('xmlfile.xml',"myid1") -> will only return the mission with the identifier "myid1" 
+            usage in the xml file:
+            <mission identifier = "customidentifierhere">
+            ...
+            </mission>
+            """
+            import os
+            from xml.etree import ElementTree
+            
+            if renpy.loadable('03data/'+xml_path):
+                code_path = '03data/'+xml_path
+            elif renpy.loadable(xml_path):
+                code_path = xml_path
+            else:
+                raise Exception("can not find file: "+xml_path)
+            f_name=(renpy.open_file(code_path))
+            tree=ElementTree.parse(f_name)
+            root = tree.getroot()
+            if identifier:
+                dom = root.find("./mission[@identifier ='"+identifier+"']")
+                ElementTree.dump(dom)
+            else:
+                dom = root.find("./mission")
+                ElementTree.dump(dom)
+            jumplabel = dom.find('jumplabel').text
+            activationtag = dom.find('activationtag').text
+            if not activationtag:
+                activationtag = "day"
+            if not jumplabel:
+                raise Exception(xml_path + " can't be processed has no jump label")
+            activationdate = dom.find('activationdate').text
+            if not activationdate:
+                activationdate = None
+
+            if not activationdate.isdigit():
+                activationdate = None
+            
+            
+            IsActive = bool(dom.find('IsActive').text)
+            information = []
+            information.append(dom.find('information/title').text)
+            information.append(dom.find('information/body').text)
+            information.append(dom.find('information/image').text)
+            
+            chapter = []
+            for i in dom.findall("metadata/chapter/li"):
+                chapter.append(i.text)
+            
+            authors = []
+            for i in dom.findall("metadata/authors/li"):
+                authors.append(i.text)
+            
+            contributors = []
+            for i in dom.findall("metadata/contributors/li"):
+                contributors.append(i.text)
+        
+            tags = []
+            for i in dom.findall("metadata/tags/li"):
+                tags.append(i.text)
+
+      
+            return cls(jumplabel,activationtag,activationdate,IsActive,authors,contributors,tags,chapter)
     
     
 

@@ -1,4 +1,4 @@
-2024-10-22 17:05:19 UTC
+2024-10-22 20:58:11 UTC
 Windows-10-10.0.19045
 Ren'Py 8.3.2.24090902
 
@@ -21,528 +21,12 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.02s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
 Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 96.39s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/configs/script.rpy", line 40, in script call
-    $ renpy.call(_return)
-  File "game/configs/script.rpy", line 38, in script
-    call screen mission_select_screen()
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 1974, in execute
-    self.call("execute")
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 1953, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\exports\statementexports.py", line 345, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 32, in execute
-    viewport:
-  File "game/screens/Mission_select_screen.rpy", line 43, in execute
-    fixed:
-  File "game/screens/Mission_select_screen.rpy", line 106, in execute
-    if lumi_room:
-  File "game/screens/Mission_select_screen.rpy", line 107, in execute
-    use select_buttonhover(bedroom6,850,520)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\parameter.py", line 503, in evaluate
-    value = renpy.python.py_eval(v, locals=scope)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/screens/Mission_select_screen.rpy", line 107, in <module>
-    use select_buttonhover(bedroom6,850,520)
-NameError: name 'bedroom6' is not defined
-
-While running game code:
-  File "game/configs/script.rpy", line 40, in script call
-    $ renpy.call(_return)
-  File "game/configs/script.rpy", line 38, in script
-    call screen mission_select_screen()
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 32, in execute
-    viewport:
-  File "game/screens/Mission_select_screen.rpy", line 43, in execute
-    fixed:
-  File "game/screens/Mission_select_screen.rpy", line 106, in execute
-    if lumi_room:
-  File "game/screens/Mission_select_screen.rpy", line 107, in execute
-    use select_buttonhover(bedroom6,850,520)
-  File "game/screens/Mission_select_screen.rpy", line 107, in <module>
-    use select_buttonhover(bedroom6,850,520)
-NameError: name 'bedroom6' is not defined
-Resetting cache.
-Early init took 174.23s
-Loading error handling took 0.01s
-Loading script took 0.12s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
@@ -570,9 +54,11 @@ Running _start took 0.00s
         </metadata>
     </mission>
 
+
+
     
 <mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_framework</jumplabel>
+        <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
         <location>kitchen</location>
         <actors>
@@ -580,7 +66,7 @@ Running _start took 0.00s
         </actors>
         <IsActive>False</IsActive>
         <information>
-            <title>Project Basics</title>
+            <title>Project Framework</title>
             <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
             <image>None</image>
         </information>
@@ -596,8 +82,9 @@ Running _start took 0.00s
     </mission>
 
     
+    
 <mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_basics</jumplabel>
+        <jumplabel>tutorial_Project_framework</jumplabel>
         <activationdate>None</activationdate>
         <location>lumi_room</location>
         <actors>
@@ -622,15 +109,15 @@ Running _start took 0.00s
     
     
 <mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_framework</jumplabel>
+        <jumplabel>tutorial_Project_art</jumplabel>
         <activationdate>None</activationdate>
-        <location>pippa_room</location>
+        <location>tenma_room</location>
         <actors>
-            <li>pippa</li>
+            <li>tenma</li>
         </actors>
         <IsActive>False</IsActive>
         <information>
-            <title>Project Basics</title>
+            <title>Project art</title>
             <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
             <image>None</image>
         </information>
@@ -647,31 +134,6 @@ Running _start took 0.00s
     
     
 <mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial6">
         <jumplabel>tutorial_Project_writing</jumplabel>
         <activationdate>None</activationdate>
         <location>shiina_room</location>
@@ -680,7 +142,7 @@ Running _start took 0.00s
         </actors>
         <IsActive>False</IsActive>
         <information>
-            <title>Project Basics</title>
+            <title>Project writing</title>
             <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
             <image>None</image>
         </information>
@@ -696,16 +158,16 @@ Running _start took 0.00s
     </mission>
    
     
-<mission identifier="tutorial7">
+<mission identifier="tutorial6">
         <jumplabel>tutorial_Project_coding</jumplabel>
         <activationdate>None</activationdate>
-        <location>garage</location>
+        <location>pippa_room</location>
         <actors>
-            <li>lia</li>
+            <li>pippa</li>
         </actors>
         <IsActive>False</IsActive>
         <information>
-            <title>Project Basics</title>
+            <title>Project coding</title>
             <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
             <image>None</image>
         </information>
@@ -720,6 +182,29 @@ Running _start took 0.00s
         </metadata>
     </mission>
     
+<mission identifier="tutorial7">
+        <jumplabel>tutorial_Renpy_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>bedroom8</location>
+        <actors>
+            <li>uruka</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>renpy Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 Interface start took 0.06s
 
 Initializing gl2 renderer:
@@ -734,10 +219,12 @@ Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
+Story_Mission('tutorialintro_start',entrance',['sakana']',0', True', ['MisterMangaker']', []', []', ['1']', ['Tutorial Introduction', 'the very introduction to the story', 'None'])
+Story_Mission('tutorialintro_start',entrance',['sakana']',0', True', ['MisterMangaker']', []', []', ['1']', ['Tutorial Introduction', 'the very introduction to the story', 'None'])
 Resetting cache.
-Early init took 256.25s
-Loading error handling took 0.01s
-Loading script took 0.10s
+Early init took 89.13s
+Loading error handling took 0.02s
+Loading script took 0.13s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.03s
@@ -745,6 +232,7 @@ Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
 Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -756,1825 +244,11 @@ Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.03s
 Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 408.20s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom5</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom5</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-Resetting cache.
-Early init took 538.58s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom5</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom5</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-Resetting cache.
-Early init took 864.06s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project art</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom5</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Renpy_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom8</location>
-        <actors>
-            <li>uruka</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>renpy Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project art</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom5</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Renpy_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom8</location>
-        <actors>
-            <li>uruka</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>renpy Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-Resetting cache.
-Early init took 917.98s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project art</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Renpy_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom8</location>
-        <actors>
-            <li>uruka</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>renpy Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project art</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>garage</location>
-        <actors>
-            <li>lia</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Renpy_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom8</location>
-        <actors>
-            <li>uruka</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>renpy Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-Resetting cache.
-Early init took 977.75s
-Loading error handling took 0.01s
-Loading script took 0.12s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
-Dump and make backups took 0.05s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.06s
-Save pyanalysis. took 0.02s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 <mission identifier="tutorial1">
@@ -2607,31 +281,6 @@ Running _start took 0.00s
 <mission identifier="tutorial2">
         <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
         <location>kitchen</location>
         <actors>
             <li>sakana</li>
@@ -2653,6 +302,31 @@ Running _start took 0.00s
         </metadata>
     </mission>
 
+    
+    
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
     
     
 <mission identifier="tutorial4">
@@ -2708,9 +382,9 @@ Running _start took 0.00s
 <mission identifier="tutorial6">
         <jumplabel>tutorial_Project_coding</jumplabel>
         <activationdate>None</activationdate>
-        <location>garage</location>
+        <location>pippa_room</location>
         <actors>
-            <li>lia</li>
+            <li>pippa</li>
         </actors>
         <IsActive>False</IsActive>
         <information>
@@ -2766,88 +440,37 @@ Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/configs/script.rpy", line 40, in script call
-    $ renpy.call(_return)
-  File "game/configs/script.rpy", line 38, in script
-    call screen mission_select_screen()
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 1974, in execute
-    self.call("execute")
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 1953, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\exports\statementexports.py", line 345, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 32, in execute
-    viewport:
-  File "game/screens/Mission_select_screen.rpy", line 43, in execute
-    fixed:
-  File "game/screens/Mission_select_screen.rpy", line 57, in execute
-    use mission_select_screen_buttons(Shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\parameter.py", line 503, in evaluate
-    value = renpy.python.py_eval(v, locals=scope)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/screens/Mission_select_screen.rpy", line 57, in <module>
-    use mission_select_screen_buttons(Shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
-NameError: name 'Shiina_room' is not defined
-
-While running game code:
-  File "game/configs/script.rpy", line 40, in script call
-    $ renpy.call(_return)
-  File "game/configs/script.rpy", line 38, in script
-    call screen mission_select_screen()
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 32, in execute
-    viewport:
-  File "game/screens/Mission_select_screen.rpy", line 43, in execute
-    fixed:
-  File "game/screens/Mission_select_screen.rpy", line 57, in execute
-    use mission_select_screen_buttons(Shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
-  File "game/screens/Mission_select_screen.rpy", line 57, in <module>
-    use mission_select_screen_buttons(Shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
-NameError: name 'Shiina_room' is not defined
+Story_Mission('tutorialintro_start',entrance',['sakana']',0', True', ['MisterMangaker']', []', []', ['1']', ['Tutorial Introduction', 'the very introduction to the story', 'None'])
+['entrance', 'sakana', 'MisterMangaker']
+Resetting cache.
+Early init took 132.06s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.00s
+Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 <mission identifier="tutorial1">
         <jumplabel>tutorialintro_start</jumplabel>
@@ -2879,31 +502,6 @@ Running _start took 0.00s
 <mission identifier="tutorial2">
         <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
         <location>kitchen</location>
         <actors>
             <li>sakana</li>
@@ -2925,6 +523,31 @@ Running _start took 0.00s
         </metadata>
     </mission>
 
+    
+    
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
     
     
 <mission identifier="tutorial4">
@@ -2980,9 +603,9 @@ Running _start took 0.00s
 <mission identifier="tutorial6">
         <jumplabel>tutorial_Project_coding</jumplabel>
         <activationdate>None</activationdate>
-        <location>garage</location>
+        <location>pippa_room</location>
         <actors>
-            <li>lia</li>
+            <li>pippa</li>
         </actors>
         <IsActive>False</IsActive>
         <information>
@@ -3024,82 +647,24 @@ Running _start took 0.00s
             </chapter>
         </metadata>
     </mission>
+Interface start took 0.07s
 
-Full traceback:
-  File "game/configs/script.rpy", line 38, in script
-    call screen mission_select_screen()
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 1974, in execute
-    self.call("execute")
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 1953, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\exports\statementexports.py", line 345, in call_screen
-    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 32, in execute
-    viewport:
-  File "game/screens/Mission_select_screen.rpy", line 43, in execute
-    fixed:
-  File "game/screens/Mission_select_screen.rpy", line 57, in execute
-    use mission_select_screen_buttons(Shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\parameter.py", line 503, in evaluate
-    value = renpy.python.py_eval(v, locals=scope)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/screens/Mission_select_screen.rpy", line 57, in <module>
-    use mission_select_screen_buttons(Shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
-NameError: name 'Shiina_room' is not defined
-
-While running game code:
-  File "game/configs/script.rpy", line 38, in script
-    call screen mission_select_screen()
-  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
-    store._return = renpy.call_screen(name, *args, **kwargs)
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 23, in execute
-    screen mission_select_screen():
-  File "game/screens/Mission_select_screen.rpy", line 32, in execute
-    viewport:
-  File "game/screens/Mission_select_screen.rpy", line 43, in execute
-    fixed:
-  File "game/screens/Mission_select_screen.rpy", line 57, in execute
-    use mission_select_screen_buttons(Shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
-  File "game/screens/Mission_select_screen.rpy", line 57, in <module>
-    use mission_select_screen_buttons(Shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
-NameError: name 'Shiina_room' is not defined
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1006.87s
+Early init took 153.48s
 Loading error handling took 0.01s
-Loading script took 0.12s
+Loading script took 0.13s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.03s
@@ -3112,6 +677,84 @@ Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+
+Full traceback:
+  File "renpy/common/00start.rpy", line 193, in script
+    python:
+  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 821, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 194, in <module>
+    renpy.execute_default_statement(True)
+  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/missions/Example_mission.rpy", line 3, in execute_default
+    default examplespecialmission1 = Special_Mission("night", "examplespecialmission1", None, True)
+  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/missions/Example_mission.rpy", line 3, in <module>
+    default examplespecialmission1 = Special_Mission("night", "examplespecialmission1", None, True)
+  File "game/01lib/03Missions.rpy", line 414, in __init__
+    if authors == '':
+UnboundLocalError: local variable 'authors' referenced before assignment
+
+While running game code:
+  File "renpy/common/00start.rpy", line 193, in script
+    python:
+  File "renpy/common/00start.rpy", line 194, in <module>
+    renpy.execute_default_statement(True)
+  File "game/missions/Example_mission.rpy", line 3, in execute_default
+    default examplespecialmission1 = Special_Mission("night", "examplespecialmission1", None, True)
+  File "game/missions/Example_mission.rpy", line 3, in <module>
+    default examplespecialmission1 = Special_Mission("night", "examplespecialmission1", None, True)
+  File "game/01lib/03Missions.rpy", line 414, in __init__
+    if authors == '':
+UnboundLocalError: local variable 'authors' referenced before assignment
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 171.76s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -3156,31 +799,6 @@ Running _start took 0.00s
 <mission identifier="tutorial2">
         <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
         <location>kitchen</location>
         <actors>
             <li>sakana</li>
@@ -3202,6 +820,31 @@ Running _start took 0.00s
         </metadata>
     </mission>
 
+    
+    
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
     
     
 <mission identifier="tutorial4">
@@ -3257,9 +900,9 @@ Running _start took 0.00s
 <mission identifier="tutorial6">
         <jumplabel>tutorial_Project_coding</jumplabel>
         <activationdate>None</activationdate>
-        <location>garage</location>
+        <location>pippa_room</location>
         <actors>
-            <li>lia</li>
+            <li>pippa</li>
         </actors>
         <IsActive>False</IsActive>
         <information>
@@ -3315,628 +958,12 @@ Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
+['entrance', 'sakana', 'MisterMangaker']
+Story_Mission('tutorialintro_start',entrance',['sakana']',0', True', ['MisterMangaker']', []', []', ['1']', ['Tutorial Introduction', 'the very introduction to the story', 'None'])
 Resetting cache.
-Early init took 1068.11s
+Early init took 296.67s
 Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project art</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Renpy_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom8</location>
-        <actors>
-            <li>uruka</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>renpy Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1077.09s
-Loading error handling took 0.01s
-Loading script took 0.10s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project art</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Renpy_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom8</location>
-        <actors>
-            <li>uruka</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>renpy Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project art</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Renpy_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom8</location>
-        <actors>
-            <li>uruka</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>renpy Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-Resetting cache.
-Early init took 1202.57s
-Loading error handling took 0.01s
-Loading script took 0.11s
+Loading script took 0.13s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.03s
@@ -3944,226 +971,8 @@ Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project art</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-<mission identifier="tutorial7">
-        <jumplabel>tutorial_Renpy_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom8</location>
-        <actors>
-            <li>uruka</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>renpy Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1322.50s
-Loading error handling took 0.01s
-Loading script took 0.13s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
-Dump and make backups took 0.05s
+Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.06s
@@ -4177,6 +986,886 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project art</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+<mission identifier="tutorial7">
+        <jumplabel>tutorial_Renpy_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>bedroom8</location>
+        <actors>
+            <li>uruka</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>renpy Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Story_Mission('tutorialintro_start',entrance',['sakana']',0', True', ['MisterMangaker']', []', []', ['1']', ['Tutorial Introduction', 'the very introduction to the story', 'None'])
+Resetting cache.
+Early init took 349.96s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project art</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+<mission identifier="tutorial7">
+        <jumplabel>tutorial_Renpy_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>bedroom8</location>
+        <actors>
+            <li>uruka</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>renpy Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Story_Mission('tutorialintro_start',entrance',['sakana']',0', True', ['MisterMangaker']', ['none']', ['none']', ['1']', ['Tutorial Introduction', 'the very introduction to the story', 'None'])
+Resetting cache.
+Early init took 382.09s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project art</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+<mission identifier="tutorial7">
+        <jumplabel>tutorial_Renpy_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>bedroom8</location>
+        <actors>
+            <li>uruka</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>renpy Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+['entrance', 'sakana', 'MisterMangaker', 'None', 'None']
+Resetting cache.
+Early init took 763.86s
+Loading error handling took 0.04s
+Loading script took 0.65s
+Loading save slot metadata took 0.08s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.08s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project art</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+<mission identifier="tutorial7">
+        <jumplabel>tutorial_Renpy_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>bedroom8</location>
+        <actors>
+            <li>uruka</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>renpy Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+['entrance', 'sakana', 'MisterMangaker']
+Resetting cache.
+Early init took 813.11s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
 Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
@@ -4370,3 +2059,224 @@ Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
 Maximum texture size: 4096x4096
+[]
+Resetting cache.
+Early init took 890.77s
+Loading error handling took 0.01s
+Loading script took 0.13s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project art</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+<mission identifier="tutorial7">
+        <jumplabel>tutorial_Renpy_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>bedroom8</location>
+        <actors>
+            <li>uruka</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>renpy Basics</title>
+            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.7.1.240711'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+['mistermangaker']
