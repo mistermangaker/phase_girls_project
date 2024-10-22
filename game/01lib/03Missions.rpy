@@ -85,7 +85,7 @@ init -10 python:
             """
             self.activationdate = 0
             self.IsActive =True
-        def Complete(self):
+        def SetComplete(self):
             """
             Complete()
             does the same thing as 'SetInactive()' but also sets the mission as complete.
@@ -235,7 +235,24 @@ init -10 python:
             #print(newactorlist)
             return newactorlist
         @classmethod
-        def mission_from_xml(cls,xml_path):
+        def mission_from_xml(cls,xml_path,identifier = None):
+            """
+            usage:
+            Story_Mission.mission_from_xml(path,identifier = None)
+            takes in a file name from the "data" folder or an override path to the file location in the game directory
+            example:
+            Story_Mission.mission_from_xml('xmlfile.xml')
+            or 
+            Story_Mission.mission_from_xml('missions/mymissionfolder/xmlfile.xml')
+            takes an optional arbitrary string known as an 'identifier' which is used to identify the mission if the xml file has multiple missions
+            example:
+            Story_Mission.mission_from_xml('xmlfile.xml') -> will always take the first mission it finds
+            Story_Mission.mission_from_xml('xmlfile.xml',"myid1") -> will only return the mission with the identifier "myid1" 
+            usage in the xml file:
+            <mission identifier = "customidentifierhere">
+            ...
+            </mission>
+            """
             import os
             from xml.etree import ElementTree
             
@@ -245,13 +262,16 @@ init -10 python:
                 code_path = xml_path
             else:
                 raise Exception("can not find file: "+xml_path)
-            
             f_name=(renpy.open_file(code_path))
-            dom=ElementTree.parse(f_name)
-            root = dom.getroot()
-            
-
-            
+            #dom=ElementTree.parse(f_name)
+            tree=ElementTree.parse(f_name)
+            root = tree.getroot()
+            if identifier:
+                dom = root.find("./mission[@identifier ='"+identifier+"']")
+                ElementTree.dump(dom)
+            else:
+                dom = root.find("./mission")
+                ElementTree.dump(dom)
             jumplabel = dom.find('jumplabel').text
             if not jumplabel:
                 raise Exception(xml_path + " can't be processed has no jump label")
@@ -289,20 +309,17 @@ init -10 python:
             for i in dom.findall("metadata/tags/li"):
                 tags.append(i.text)
             
-            print(actors)
-            print(authors)
-            print (contributors)
-            print (tags)
-            print (chapter)
+            #print(actors)
+            #print(authors)
+            #print (contributors)
+            #print (tags)
+            #print (chapter)
 
             
 
             
             return cls(jumplabel,activationdate,location,actors,IsActive,authors,contributors,tags,chapter,information,)
-        
-        
-        
-        pass
+       
 
         def Appened_story_information(self,new_information):
             """
