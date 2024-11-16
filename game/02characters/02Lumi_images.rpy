@@ -7,7 +7,13 @@ layeredimage lumi:
         attribute dress default
     group arms auto:
         attribute held default
+        attribute relaxed 
     group emote auto:
         attribute neutral default
+        attribute angry
+        attribute sad
+        attribute happy
+        attribute smug
+        attribute verysmug
 
 

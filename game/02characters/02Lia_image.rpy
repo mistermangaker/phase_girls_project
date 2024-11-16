@@ -7,12 +7,17 @@ layeredimage lia:
         attribute down default
     group outfit auto:
         attribute normal default
+    group emote auto:
+        attribute neutral default
+        attribute happy
+        attribute sad
+        attribute angry
+        attribute smug
     group leftarm auto:
         attribute relaxed default
         attribute up
     group rightarm auto:
         attribute relaxed default
         attribute up
-    group emote auto:
-        attribute neutral default
+    
 

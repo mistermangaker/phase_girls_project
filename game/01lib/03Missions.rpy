@@ -75,7 +75,7 @@ init -10 python:
         def SetInactive(self):
             """
             SetInactive()
-            sets the mission as inactive. inactive missions will not be randomly selected in the mission select screen. used in cases where a certian decision or action will remove a
+            sets the mission as inactive. inactive missions will not be randomly selected in the mission select screen. used in cases where a certian decision or action on the players part will remove a mission from the availible mission pool without marking it as complete
             """
             self.activationdate = None
             self.IsActive = False
@@ -88,7 +88,7 @@ init -10 python:
             self.IsActive =True
         def SetComplete(self):
             """
-            Complete()
+            SetComplete()
             does the same thing as 'SetInactive()' but also sets the mission as complete.
             """
             self.IsActive = False
@@ -96,6 +96,11 @@ init -10 python:
             self.completed = True
 
         def Conditional_activate(self,*missions):
+            """
+            Conditional_activate(*missions):
+            takes in the instances of several other missions and checks to see if they are all completed. if all are completed then it sets the mission to active. 
+            used in cases where you would want to see if several other missions were completed without having to use long "if/else" chains
+            """
             for i in missions:
                 if not i.completed:
                     return False
@@ -103,7 +108,14 @@ init -10 python:
             self.IsActive =True
             return True
 
-        def Conditional_activate_percentage(threshold,self,*missions):
+        def Conditional_activate_percentage(self,threshold,*missions):
+            """
+            Conditional_activate_percentage(threshold,*missions)
+            arguments: threshold float 0 to 100
+            missions: mission instances
+            takes in number between 1 and 100 and a list of missions as arguments
+            checks to see what percentage of those missions are completed and if its higher than the threshold. it returns true
+            """
             whole = 0
             notcompleted = 0
             for i in missions:
@@ -135,7 +147,7 @@ init -10 python:
         @staticmethod
         def Check_completed_percentage(threshold,*missions):
             """
-            Check_completed_percentage(100,*missions)
+            Check_completed_percentage(threshold,*missions)
             arguments: threshold float 0 to 100
             missions: mission instances
             takes in number between 1 and 100 and a list of missions as arguments
@@ -206,7 +218,8 @@ init -10 python:
 
         def __repr__(self):
             return f'Story_Mission(\'{self.jumplabel}\',{self.location}\',{self.actors_string}\',{self.activationdate}\', {self.IsActive}\', {self.author}\', {self.contributors}\', {self.tags}\', {self.chapter}\', {self.information})'
-                
+        def __str__(self):
+            return f'{self.jumplabel}'       
         
         
         """
@@ -334,9 +347,9 @@ init -10 python:
             for i in dom.findall("metadata/chapter/li"):
                 chapter.append(i.text)
             
-            authors = []
+            author = []
             for i in dom.findall("metadata/authors/li"):
-                authors.append(i.text)
+                author.append(i.text)
             
             contributors = []
             for i in dom.findall("metadata/contributors/li"):
@@ -356,10 +369,10 @@ init -10 python:
             
 
             
-            return cls(jumplabel,location,actors,activationdate,IsActive,authors,contributors,tags,chapter,information,)
+            return cls(jumplabel,location,actors,activationdate,IsActive,author,contributors,tags,chapter,information,)
        
 
-        def Appened_story_information(self,new_information):
+        def Override_story_information(self,new_information):
             """
             pass in a list of two strings and an image
             """
@@ -407,7 +420,8 @@ init -10 python:
         
         def __repr__(self):
             return f'Special_Mission(\'{self.activationtag}\', {self.jumplabel}\', {self.activationdate}\', {self.IsActive}\', {self.author}\', {self.contributors}\', {self.tags}\', {self.chapter})'
-
+        def __str__(self):
+            return f'{self.jumplabel}'
 
         @property
         def metadata(self):
@@ -433,20 +447,20 @@ init -10 python:
                 specialsqueueday.appendleft(self.jumplabel)
             if self.activationtag == "night":
                 specialsqueuenight.appendleft(self.jumplabel)
-
+        @classmethod
         def mission_from_xml(cls,xml_path,identifier = None):
             """
             usage:
-            Story_Mission.mission_from_xml(path,identifier = None)
+            Special_Missionmission_from_xml(path,identifier = None)
             takes in a file name from the "data" folder or an override path to the file location in the game directory
             example:
-            Story_Mission.mission_from_xml('xmlfile.xml')
+            Special_Mission.mission_from_xml('xmlfile.xml')
             or 
-            Story_Mission.mission_from_xml('missions/mymissionfolder/xmlfile.xml')
+            Special_Mission.mission_from_xml('missions/mymissionfolder/xmlfile.xml')
             takes an optional arbitrary string known as an 'identifier' which is used to identify the mission if the xml file has multiple missions
             example:
-            Story_Mission.mission_from_xml('xmlfile.xml') -> will always take the first mission it finds
-            Story_Mission.mission_from_xml('xmlfile.xml',"myid1") -> will only return the mission with the identifier "myid1" 
+            Special_Mission.mission_from_xml('xmlfile.xml') -> will always take the first mission it finds
+            Special_Mission.mission_from_xml('xmlfile.xml',"myid1") -> will only return the mission with the identifier "myid1" 
             usage in the xml file:
             <mission identifier = "customidentifierhere">
             ...
@@ -485,10 +499,7 @@ init -10 python:
             
             
             IsActive = bool(dom.find('IsActive').text)
-            information = []
-            information.append(dom.find('information/title').text)
-            information.append(dom.find('information/body').text)
-            information.append(dom.find('information/image').text)
+            
             
             chapter = []
             for i in dom.findall("metadata/chapter/li"):

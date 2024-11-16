@@ -17,7 +17,7 @@ layeredimage tenma:
         attribute agitated 
         
     group emote auto:
-        attribute content default
+        attribute neutral default
         attribute happy
         attribute sad 
         attribute annoyed
@@ -30,10 +30,8 @@ layeredimage tenma:
         attribute sweater default
     group arms auto:
         attribute side default
-    #group hoodie auto:
-    #    attribute base default:
+        attribute tochest
 
-#image tenma_emote_content:
 
 image tenma_tail_wag:
     "Characters/Tenma/tenma_tail1.png"

@@ -15,6 +15,18 @@ image shiina_room day:
     "Backgrounds/DayTime/generic_bedroom.png"
 image shiina_room night:
     "Backgrounds/NightTime/generic_bedroom.png"
+image uruka_room day:
+    "Backgrounds/DayTime/generic_bedroom.png"
+image uruka_room night:
+    "Backgrounds/NightTime/generic_bedroom.png"
+image lia_room day:
+    "Backgrounds/DayTime/generic_bedroom.png"
+image lia_room night:
+    "Backgrounds/NightTime/generic_bedroom.png"
+image nasa_room day:
+    "Backgrounds/DayTime/generic_bedroom.png"
+image nasa_room night:
+    "Backgrounds/NightTime/generic_bedroom.png"
 
 
 #common rooms

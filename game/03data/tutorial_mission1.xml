@@ -17,7 +17,9 @@
             <authors>
                 <li>MisterMangaker</li>
             </authors>
-
+            <tags>
+                <li>tutorial</li>
+            </tags>
             <chapter>
                 <li>1</li>
             </chapter>
@@ -35,15 +37,17 @@
         </actors>
         <IsActive>False</IsActive>
         <information>
-            <title>Project Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <title>Project Framework</title>
+            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
             <image>None</image>
         </information>
         <metadata>
             <authors>
                 <li>MisterMangaker</li>
             </authors>
-
+            <tags>
+                <li>tutorial</li>
+            </tags>
             <chapter>
                 <li>1</li>
             </chapter>
@@ -59,15 +63,17 @@
         </actors>
         <IsActive>False</IsActive>
         <information>
-            <title>Project Framework</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <title>Project Basics</title>
+            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
             <image>None</image>
         </information>
         <metadata>
             <authors>
                 <li>MisterMangaker</li>
             </authors>
-
+            <tags>
+                <li>tutorial</li>
+            </tags>
             <chapter>
                 <li>1</li>
             </chapter>
@@ -84,15 +90,17 @@
         </actors>
         <IsActive>False</IsActive>
         <information>
-            <title>Project art</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
             <image>None</image>
         </information>
         <metadata>
             <authors>
                 <li>MisterMangaker</li>
             </authors>
-
+            <tags>
+                <li>tutorial</li>
+            </tags>
             <chapter>
                 <li>1</li>
             </chapter>
@@ -109,14 +117,16 @@
         <IsActive>False</IsActive>
         <information>
             <title>Project writing</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
             <image>None</image>
         </information>
         <metadata>
             <authors>
                 <li>MisterMangaker</li>
             </authors>
-
+            <tags>
+                <li>tutorial</li>
+            </tags>
             <chapter>
                 <li>1</li>
             </chapter>
@@ -133,40 +143,20 @@
         <IsActive>False</IsActive>
         <information>
             <title>Project coding</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
+            <body>The basics about coding for this project</body>
             <image>None</image>
         </information>
         <metadata>
             <authors>
                 <li>MisterMangaker</li>
             </authors>
-
+            <tags>
+                <li>tutorial</li>
+            </tags>
             <chapter>
                 <li>1</li>
             </chapter>
         </metadata>
     </mission>
-    <mission identifier = "tutorial7">
-        <jumplabel>tutorial_Renpy_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>bedroom8</location>
-        <actors>
-            <li>uruka</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>renpy Basics</title>
-            <body>various nonsense about liscensing, legal jargon and allowed content. \nIn other words: \nBORING STUFF</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
 
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
 </defs>

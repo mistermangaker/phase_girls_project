@@ -7,11 +7,7 @@ default eimi_actor = actors("eimi", "Mission_select_screen_icons/eimi_icon.png")
 
 
 
-define lori = Character("lori", image='lori')
-default lori_actor = actors("lori")
 
-define michiru = Character("michiru", image='michiru')
-default michiru_actor = actors("michiru")
 
 define jelly = Character("jelly", image='jelly')
 default jelly_actor = actors("jelly")

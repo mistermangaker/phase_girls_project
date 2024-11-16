@@ -5,11 +5,16 @@ layeredimage shiina:
     zoom 0.5
     group backhair auto:
         attribute out default
-    group backarm auto:
-        attribute relaxed default
     group body auto:
         attribute outfit1 default
-    group frontarm auto:
+    group arms auto:
         attribute relaxed default
+        attribute crossed
     group emote auto:
         attribute neutral default
+        attribute sad
+        attribute angry
+        attribute happy
+        attribute smug
+        attribute verysmug
+        attribute pout

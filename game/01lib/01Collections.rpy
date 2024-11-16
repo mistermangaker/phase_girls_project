@@ -17,3 +17,5 @@ default specialmissionslist_repository = [ ]
 default specialsqueueday = collections.deque([])
 #a deque for the current save that holds a the special missions queued to be triggered at night after the day has ended
 default specialsqueuenight = collections.deque([])
+# a list of all chapters
+default system_chapters_repository = []

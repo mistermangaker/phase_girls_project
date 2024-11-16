@@ -7,6 +7,9 @@ layeredimage sakana:
         attribute relaxed default
     group emote auto:
         attribute neutral default
+        attribute angry
+        attribute embarassed
+        attribute sad
     group neararm auto:
         attribute relaxed default
     

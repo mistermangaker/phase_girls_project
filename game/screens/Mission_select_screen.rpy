@@ -32,7 +32,7 @@ screen mission_select_screen():
     viewport: 
         #area (0, 0, 1920, 1000)
         ysize 1000
-        edgescroll (250, 250) 
+        edgescroll (300, 500) 
         
         
         child_size (2400, 1350)
@@ -42,32 +42,32 @@ screen mission_select_screen():
 
         fixed:
             add   "Mission_select_screen/mission_select_screen.png" 
-            default tenma_room = providemission_info("tenma_room")
-            use mission_select_screen_buttons(tenma_room,(1150,200),"Mission_select_screen/bedroom1_%s.png",["Tenma's rooom", "This room belongs to Tenma Maemi the lovable adorable fox girl. \nShe is said to be the cutest idol in the world as long as she isn't talking", "mt.png"])
+            default bedroom1 = providemission_info("tenma_room")
+            use mission_select_screen_buttons(bedroom1,(1150,200),"Mission_select_screen/bedroom1_%s.png",["Tenma's rooom", "This room belongs to Tenma Maemi the lovable adorable fox girl. \nShe is said to be the cutest idol in the world as long as she isn't talking", "mt.png"])
 
-            default pippa_room = providemission_info("pippa_room")
-            use mission_select_screen_buttons(pippa_room,(1300,200),"Mission_select_screen/bedroom2_%s.png",["Pippa's rooom", "this is an ordinary nothing special room", "mt.png"])
+            default bedroom2 = providemission_info("pippa_room")
+            use mission_select_screen_buttons(bedroom2,(1300,200),"Mission_select_screen/bedroom2_%s.png",["Pippa's rooom", "This room belongs to pippa pipkin. here name was deliberately left in lower case to annoy you", "mt.png"])
                     
 
-            default bedroom3 = providemission_info("bedroom3")
-            use mission_select_screen_buttons(bedroom3,(1480,200),"Mission_select_screen/bedroom3_%s.png",["empty room", "this is an ordinary nothing special room", "mt.png"])
+            default bedroom3 = providemission_info("Lia_room")
+            use mission_select_screen_buttons(bedroom3,(1480,200),"Mission_select_screen/bedroom3_%s.png",["Lia's room", "This room belongs to Lia .-. ", "mt.png"])
             
 
-            default shiina_room = providemission_info("shiina_room")
-            use mission_select_screen_buttons(shiina_room,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "this is an ordinary nothing special room", "mt.png"])
+            default bedroom4 = providemission_info("shiina_room")
+            use mission_select_screen_buttons(bedroom4,(1620,200),"Mission_select_screen/bedroom4_%s.png",["Shiina's room", "This room belongs to shiina or otherwise known as the objectively best girl at phase connect", "mt.png"])
             
             default bedroom5 = providemission_info("bedroom5")
             use mission_select_screen_buttons(bedroom5,(820,520),"Mission_select_screen/bedroom5_%s.png",["empty room", "this is an ordinary nothing special room", "mt.png"])
             
     
-            default lumi_room = providemission_info("lumi_room")
-            use mission_select_screen_buttons(lumi_room,(1000,520),"Mission_select_screen/bedroom6_%s.png",["Lumi's room", "this is an ordinary nothing special room", "mt.png"])
+            default bedroom6 = providemission_info("lumi_room")
+            use mission_select_screen_buttons(bedroom6,(1000,520),"Mission_select_screen/bedroom6_%s.png",["Lumi's room", "this is an ordinary nothing special room", "mt.png"])
     
             default bedroom7 = providemission_info("bedroom7")
             use mission_select_screen_buttons(bedroom7,(1400,520),"Mission_select_screen/bedroom7_%s.png",["empty room", "this is an ordinary nothing special room", "mt.png"])
             
-            default bedroom8 = providemission_info("bedroom8")
-            use mission_select_screen_buttons(bedroom8,(1540,520),"Mission_select_screen/bedroom8_%s.png",["empty room", "this is an ordinary nothing special room", "mt.png"])
+            default bedroom8 = providemission_info("uruka_room")
+            use mission_select_screen_buttons(bedroom8,(1540,520),"Mission_select_screen/bedroom8_%s.png",["Uruka's room", "This room belongs to Uruka. very nice", "mt.png"])
             
         
             
@@ -93,18 +93,18 @@ screen mission_select_screen():
             default kitchen = providemission_info("kitchen")
             use mission_select_screen_buttons(kitchen,(1840,520),"Mission_select_screen/kitchen_%s.png",["Kitchen", "this is an ordinary nothing special room", "mt.png"])
 
-            if tenma_room:
-                use select_buttonhover(tenma_room,1000,200)
-            if pippa_room:
-                use select_buttonhover(pippa_room,1160,200) 
+            if bedroom1:
+                use select_buttonhover(bedroom1,1000,200)
+            if bedroom2:
+                use select_buttonhover(bedroom2,1160,200) 
             if bedroom3:
                 use select_buttonhover(bedroom3,1320,200)
-            if shiina_room:
-                use select_buttonhover(shiina_room,1440,200)
+            if bedroom4:
+                use select_buttonhover(bedroom4,1440,200)
             if bedroom5:
                 use select_buttonhover(bedroom5,720,520)
-            if lumi_room:
-                use select_buttonhover(lumi_room,850,520)
+            if bedroom6:
+                use select_buttonhover(bedroom6,850,520)
             if bedroom7:
                 use select_buttonhover(bedroom7,1440,520)
             if bedroom8:

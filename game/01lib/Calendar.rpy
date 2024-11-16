@@ -13,6 +13,10 @@ init python:
         @property
         def Output(self):
             return self.Weekdays[self.Day] +  " " + self.Months[self.Month] + " " + str(self.Days+1) + " " + " total days:" +str(self.Totaldays)
+        @property 
+        def Output_short(self):
+            return self.Weekdays[self.Day] +  " " + self.Months[self.Month] + " " + str(self.Days+1)
+
         def AddDay(self, Days):
             #this code is used for missions that are meant to occur over many days without returning to the main mission select screen.
             self.Day += 1
@@ -27,4 +31,4 @@ init python:
             if self.Month > 11:
                 self.Month = 0
                 
-default calendar = Calendar(0,0,["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"],0,["Monday","Tuesday","Wednsday","Thursday","Friday","Saturday","Sunday"], [31,28,31,30,31,30,31,31,30,31,30,31],0,)    
+default calendar = Calendar(0,0,["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],0,["Monday","Tuesday","Wednsday","Thursday","Friday","Saturday","Sunday"], [31,28,31,30,31,30,31,31,30,31,30,31],0,)    

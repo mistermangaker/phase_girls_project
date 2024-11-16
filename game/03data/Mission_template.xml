@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf8'?>
+<defs>
+    <mission identifier = "mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>0</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    <mission identifier = "specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+</defs>
+
+
+

@@ -213,6 +213,8 @@ screen choice(items):
             textbutton i.caption action i.action
 
 
+    
+
 style choice_vbox is vbox
 style choice_button is button
 style choice_button_text is button_text

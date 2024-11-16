@@ -5,17 +5,19 @@ layeredimage pippa:
     zoom 0.5
     group hair auto:
         attribute back default
-    group body auto:
-        attribute bare default
-        attribute jacket
-    group bangs auto:
-        attribute down default
+    group outfit auto:
+        attribute base default
     group emote auto:
-        attribute content default
-    group arms:
-        attribute jacket_up if_all['jacket']:
-            "pippa_arms_jacket_up"
+        attribute neutral default
+        attribute annoyed
+        attribute angry
+        attribute sad
+        attribute happy
+        attribute veryhappy
+        attribute smug
+    group arms auto:
+        attribute up 
+        attribute down default
+
             
-image pippa_jacket:
-    "pippa jacket jacket_up" 
 

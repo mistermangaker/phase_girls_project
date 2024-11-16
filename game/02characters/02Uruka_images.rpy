@@ -13,3 +13,9 @@ layeredimage uruka:
         attribute onhip default
     group emote auto:
         attribute neutral default
+        attribute angry
+        attribute sad
+        attribute happy
+        attribute smug
+        
+

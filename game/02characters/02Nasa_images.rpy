@@ -13,5 +13,11 @@ layeredimage nasa:
         attribute relaxed default
     group emote auto:
         attribute neutral default
+        attribute happy
+        attribute sad
+        attribute angry
+        attribute smug
+        attribute verysmug
+        attribute pout
 
 
