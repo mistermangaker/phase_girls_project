@@ -14,6 +14,9 @@
 
 define config.name = _("The Phase Connect streamer house")
 
+
+#defaults the debug mode of the game to false
+
 default persistent.debugmode = False
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.

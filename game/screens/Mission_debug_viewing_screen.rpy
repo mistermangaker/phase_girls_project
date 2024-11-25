@@ -19,8 +19,12 @@ init python:
         inputmission.tags = tags_value.split(",")
         inputmission.information[0]=title_value
         inputmission.information[1]=body_value
+    
     def saveactivationdate(inputmission,inputvalue):
-        s=int(inputvalue)
+        try:
+            s=int(inputvalue)
+        except:
+            s= None
         inputmission.activationdate=s
         return
     
@@ -227,7 +231,7 @@ screen missionedits(missiontoedit):
                     button:
                         action activationdate_value.Toggle()
                         input:
-                            allow "1234567890"
+                            allow "1234567890noe"
                             value activationdate_value
                     if missiontoedit.type == "story":
                     

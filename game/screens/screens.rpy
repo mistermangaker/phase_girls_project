@@ -698,6 +698,19 @@ screen preferences():
                     textbutton _("After Choices") action Preference("after choices", "toggle")
                     textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
+                vbox:
+                    style_prefix "check"
+                    label _("Main Menu Backgrounds")
+                    $ text = MainMenus_background.returnitembyid(persistent.mainmenu_object)
+                    button:
+                        hbox:
+                            image '[text.icon]':
+                                xysize (50,50)
+                                yalign 0.5
+                            text "[text.label]":
+                                yalign 0.5
+                        action CaptureFocus("diff_drop")
+
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
 
@@ -759,6 +772,23 @@ screen preferences():
                     else:
                         textbutton "Disabled":
                             action ToggleVariable("persistent.debugmode", True ,False)
+    if GetFocusRect("diff_drop"):
+        dismiss action ClearFocus("diff_drop")
+        nearrect:
+            focus "diff_drop"
+            prefer_top False
+            frame:
+                xsize 300
+                modal True
+                has vbox
+                for i in Main_menus_background:
+                    hbox:
+                        add i.icon:
+                            xysize (50,50)
+                            yalign 0.5
+                        textbutton i.label:
+                            yalign 0.5
+                            action [ SetVariable("persistent.mainmenu_object", i.identifier), ClearFocus("diff_drop") ]
 
 
 style pref_label is gui_label

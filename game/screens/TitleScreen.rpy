@@ -29,7 +29,7 @@ screen additionallink():
 
 screen main_menu():
     $ t = renpy.random.choice(Main_menus_background)
-    on 'show' action Play('music', t.bgm, relative_volume =1, fadein=1.0, if_changed=True)
+    on 'show' action Play('music', "Music_Export/Calm/Far_Behind.mp3", relative_volume =1, fadein=1.0, if_changed=True)
     on "hide" action Stop("music",fadeout = 1)
     
     

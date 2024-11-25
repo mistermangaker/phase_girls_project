@@ -1,14 +1,8 @@
-
-
-
-
 default tenma_actor = actors("tenma", "Mission_select_screen_icons/tenma_icon.png")
 define tenma = Character("Tenma", image='tenma')
 define tenma_pov= Character("Tenma",image="tenma_pov")
-#image side tenma_pov content = "Characters/Tenma/Side_images/content.png"
 
-#image tenma_talking_content = Movie("Characters/Tenma/Side_images/talking.mp4")
-#image tenma_idle_content = Movie("Characters/Tenma/Side_images/idle.mp4")
+
 layeredimage tenma:
     zoom 0.5
     group tail auto:

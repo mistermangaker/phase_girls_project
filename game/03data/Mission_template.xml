@@ -2,7 +2,7 @@
 <defs>
     <mission identifier = "mis1">
         <jumplabel>example_mission1</jumplabel>
-        <activationdate>0</activationdate>
+        <activationdate>None</activationdate>
         <location>kitchen</location>
         <actors>
             <li>actor_1</li>

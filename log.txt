@@ -1,17 +1,18 @@
-2024-11-13 00:30:22 UTC
+2024-11-25 23:04:17 UTC
 Windows-10-10.0.19045
 Ren'Py 8.3.2.24090902
 
 Early init took 0.06s
-Loading error handling took 0.02s
-Loading script took 0.22s
+Loading error handling took 0.03s
+Loading script took 0.30s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 Running init code took 0.08s
 Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
+Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
 Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -23,12 +24,12 @@ Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
 Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 <mission identifier="tutorial1">
         <jumplabel>tutorialintro_start</jumplabel>
@@ -59,6 +60,47 @@ Running _start took 0.00s
 
 
     
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 <mission identifier="tutorial2">
         <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
@@ -87,6 +129,32 @@ Running _start took 0.00s
 
     
     
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
 <mission identifier="tutorial3">
         <jumplabel>tutorial_Project_framework</jumplabel>
         <activationdate>None</activationdate>
@@ -113,6 +181,174 @@ Running _start took 0.00s
         </metadata>
     </mission>
     
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
+        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 290.66s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
     
 <mission identifier="tutorial4">
         <jumplabel>tutorial_Project_art</jumplabel>
@@ -141,17 +377,31 @@ Running _start took 0.00s
     </mission>
     
     
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
         <activationdate>None</activationdate>
-        <location>shiina_room</location>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
         <actors>
-            <li>shiina</li>
+            <li>sakana</li>
         </actors>
         <IsActive>False</IsActive>
         <information>
-            <title>Project writing</title>
-            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <title>Project Basics</title>
+            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
             <image>None</image>
         </information>
         <metadata>
@@ -166,7 +416,8 @@ Running _start took 0.00s
             </chapter>
         </metadata>
     </mission>
-   
+
+    
     
 <mission identifier="tutorial6">
         <jumplabel>tutorial_Project_coding</jumplabel>
@@ -194,13 +445,119 @@ Running _start took 0.00s
         </metadata>
     </mission>
 
-<mission>
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
         <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
         <activationdate>None</activationdate>
         <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
         <IsActive>False</IsActive>
         <metadata>
             <authors>
@@ -211,6 +568,1457 @@ Running _start took 0.00s
             </chapter>
         </metadata>
     </mission>
+    
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 360.82s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
+        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 376.09s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
+        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 396.02s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
+        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 455.26s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
+        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 485.75s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.06s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
+        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
 Interface start took 0.07s
 
 Initializing gl2 renderer:
@@ -224,21 +2032,21 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 45.70s
-Loading error handling took 0.02s
-Loading script took 0.19s
+Early init took 496.50s
+Loading error handling took 0.01s
+Loading script took 0.15s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.05s
 Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
+Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
 Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.04s
+Initial gc took 0.06s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -249,7 +2057,587 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.06s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
+        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 507.25s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
+    
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Basics</title>
+            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+    
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
+        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 517.97s
+Loading error handling took 0.02s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
@@ -282,6 +2670,47 @@ Running _start took 0.00s
 
 
     
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 <mission identifier="tutorial2">
         <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
@@ -310,6 +2739,32 @@ Running _start took 0.00s
 
     
     
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
 <mission identifier="tutorial3">
         <jumplabel>tutorial_Project_framework</jumplabel>
         <activationdate>None</activationdate>
@@ -336,6 +2791,174 @@ Running _start took 0.00s
         </metadata>
     </mission>
     
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
+        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800'
+Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 602.97s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+<mission identifier="tutorial1">
+        <jumplabel>tutorialintro_start</jumplabel>
+        <activationdate>0</activationdate>
+        <location>entrance</location>
+        <actors>
+            <li>sakana</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>Tutorial Introduction</title>
+            <body>the very introduction to the story</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+
+
     
 <mission identifier="tutorial4">
         <jumplabel>tutorial_Project_art</jumplabel>
@@ -364,17 +2987,31 @@ Running _start took 0.00s
     </mission>
     
     
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
         <activationdate>None</activationdate>
-        <location>shiina_room</location>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial2">
+        <jumplabel>tutorial_Project_basics</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
         <actors>
-            <li>shiina</li>
+            <li>sakana</li>
         </actors>
         <IsActive>False</IsActive>
         <information>
-            <title>Project writing</title>
-            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <title>Project Basics</title>
+            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
             <image>None</image>
         </information>
         <metadata>
@@ -389,7 +3026,8 @@ Running _start took 0.00s
             </chapter>
         </metadata>
     </mission>
-   
+
+    
     
 <mission identifier="tutorial6">
         <jumplabel>tutorial_Project_coding</jumplabel>
@@ -417,13 +3055,119 @@ Running _start took 0.00s
         </metadata>
     </mission>
 
-<mission>
+<mission identifier="tutorial3">
+        <jumplabel>tutorial_Project_framework</jumplabel>
+        <activationdate>None</activationdate>
+        <location>lumi_room</location>
+        <actors>
+            <li>lumi</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Framework</title>
+            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
+        <activationdate>None</activationdate>
+        <location>kitchen</location>
+        <actors>
+            <li>actor_1</li>
+            <li>actor_2</li>
+        </actors>
+        <IsActive>True</IsActive>
+        <information>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
+    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+<mission identifier="tutorial5">
+        <jumplabel>tutorial_Project_writing</jumplabel>
+        <activationdate>None</activationdate>
+        <location>shiina_room</location>
+        <actors>
+            <li>shiina</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project writing</title>
+            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+   
+    
+<mission identifier="special1">
         <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
         <activationdate>None</activationdate>
         <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
         <IsActive>False</IsActive>
         <metadata>
             <authors>
@@ -434,7 +3178,8 @@ Running _start took 0.00s
             </chapter>
         </metadata>
     </mission>
-Interface start took 0.06s
+    
+Interface start took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -447,59 +3192,34 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 215.61s
-Loading error handling took 0.01s
-Loading script took 0.17s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/missions/Tutorial/Tutorial_missions.rpy", line 604: invalid syntax
-    Special_Mission(jumplabel =, activationtag = "day", activationdate = None , IsActive = False ,author =["mistermangaker"],contributors= ["None"],tags= ["None"],chapter="one")
-                                ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 253.37s
-Loading error handling took 0.01s
-Loading script took 0.17s
+Early init took 642.85s
+Loading error handling took 0.02s
+Loading script took 0.16s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.06s
 Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
+Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
 Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.04s
+Initial gc took 0.05s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.02s
+Init translation took 0.03s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 <mission identifier="tutorial1">
         <jumplabel>tutorialintro_start</jumplabel>
@@ -530,6 +3250,47 @@ Running _start took 0.00s
 
 
     
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 <mission identifier="tutorial2">
         <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
@@ -558,6 +3319,32 @@ Running _start took 0.00s
 
     
     
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
 <mission identifier="tutorial3">
         <jumplabel>tutorial_Project_framework</jumplabel>
         <activationdate>None</activationdate>
@@ -585,194 +3372,31 @@ Running _start took 0.00s
     </mission>
     
     
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
         <activationdate>None</activationdate>
-        <location>tenma_room</location>
+        <location>kitchen</location>
         <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Art</title>
-            <body>A quick guide on how to make art for layered images</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>The basics about coding for this project</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-<mission>
-        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
-        <activationdate>None</activationdate>
-        <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-Full traceback:
-  File "renpy/common/00start.rpy", line 193, in script
-    python:
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\ast.py", line 821, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 194, in <module>
-    renpy.execute_default_statement(True)
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\exports\statementexports.py", line 372, in execute_default_statement
-    i.execute_default(start)
-  File "game/missions/Tutorial/Tutorial_missions.rpy", line 604, in execute_default
-    default example_specialmission = Special_Mission(jumplabel =example_specialmission, activationtag = "day", activationdate = None , IsActive = False ,author =["mistermangaker"],contributors= ["None"],tags= ["None"],chapter="one")
-  File "C:\Users\Owner\Desktop\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/missions/Tutorial/Tutorial_missions.rpy", line 604, in <module>
-    default example_specialmission = Special_Mission(jumplabel =example_specialmission, activationtag = "day", activationdate = None , IsActive = False ,author =["mistermangaker"],contributors= ["None"],tags= ["None"],chapter="one")
-NameError: name 'example_specialmission' is not defined
-
-While running game code:
-  File "renpy/common/00start.rpy", line 193, in script
-    python:
-  File "renpy/common/00start.rpy", line 194, in <module>
-    renpy.execute_default_statement(True)
-  File "game/missions/Tutorial/Tutorial_missions.rpy", line 604, in execute_default
-    default example_specialmission = Special_Mission(jumplabel =example_specialmission, activationtag = "day", activationdate = None , IsActive = False ,author =["mistermangaker"],contributors= ["None"],tags= ["None"],chapter="one")
-  File "game/missions/Tutorial/Tutorial_missions.rpy", line 604, in <module>
-    default example_specialmission = Special_Mission(jumplabel =example_specialmission, activationtag = "day", activationdate = None , IsActive = False ,author =["mistermangaker"],contributors= ["None"],tags= ["None"],chapter="one")
-NameError: name 'example_specialmission' is not defined
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 268.59s
-Loading error handling took 0.01s
-Loading script took 0.17s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
+            <li>actor_1</li>
+            <li>actor_2</li>
         </actors>
         <IsActive>True</IsActive>
         <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
             <image>None</image>
         </information>
         <metadata>
             <authors>
-                <li>MisterMangaker</li>
+                <li>your name here</li>
             </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
             <tags>
-                <li>tutorial</li>
+                <li>tag1!</li>
+                <li>tag2!</li>
             </tags>
             <chapter>
                 <li>1</li>
@@ -780,91 +3404,29 @@ Running _start took 0.00s
         </metadata>
     </mission>
 
-
-
     
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
         <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
-            <image>None</image>
-        </information>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
         <metadata>
             <authors>
-                <li>MisterMangaker</li>
+                <li>your name here</li>
             </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
             <tags>
-                <li>tutorial</li>
+                <li>tag1!</li>
+                <li>tag2!</li>
             </tags>
             <chapter>
                 <li>1</li>
             </chapter>
         </metadata>
     </mission>
-
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Art</title>
-            <body>A quick guide on how to make art for layered images</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
 <mission identifier="tutorial5">
         <jumplabel>tutorial_Project_writing</jumplabel>
         <activationdate>None</activationdate>
@@ -892,39 +3454,10 @@ Running _start took 0.00s
     </mission>
    
     
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>The basics about coding for this project</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-<mission>
+<mission identifier="special1">
         <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
         <activationdate>None</activationdate>
         <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
         <IsActive>False</IsActive>
         <metadata>
             <authors>
@@ -935,6 +3468,7 @@ Running _start took 0.00s
             </chapter>
         </metadata>
     </mission>
+    
 Interface start took 0.06s
 
 Initializing gl2 renderer:
@@ -948,27 +3482,27 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 394.84s
+Early init took 704.17s
 Loading error handling took 0.01s
-Loading script took 0.17s
+Loading script took 0.15s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
 Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.05s
+Initial gc took 0.06s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.03s
+Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
@@ -1006,6 +3540,47 @@ Running _start took 0.00s
 
 
     
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 <mission identifier="tutorial2">
         <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
@@ -1034,6 +3609,32 @@ Running _start took 0.00s
 
     
     
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
 <mission identifier="tutorial3">
         <jumplabel>tutorial_Project_framework</jumplabel>
         <activationdate>None</activationdate>
@@ -1061,164 +3662,31 @@ Running _start took 0.00s
     </mission>
     
     
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
         <activationdate>None</activationdate>
-        <location>tenma_room</location>
+        <location>kitchen</location>
         <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Art</title>
-            <body>A quick guide on how to make art for layered images</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>The basics about coding for this project</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-<mission>
-        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
-        <activationdate>None</activationdate>
-        <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 470.82s
-Loading error handling took 0.01s
-Loading script took 0.17s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
+            <li>actor_1</li>
+            <li>actor_2</li>
         </actors>
         <IsActive>True</IsActive>
         <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
             <image>None</image>
         </information>
         <metadata>
             <authors>
-                <li>MisterMangaker</li>
+                <li>your name here</li>
             </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
             <tags>
-                <li>tutorial</li>
+                <li>tag1!</li>
+                <li>tag2!</li>
             </tags>
             <chapter>
                 <li>1</li>
@@ -1226,91 +3694,29 @@ Running _start took 0.00s
         </metadata>
     </mission>
 
-
-
     
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
         <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
-            <image>None</image>
-        </information>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
         <metadata>
             <authors>
-                <li>MisterMangaker</li>
+                <li>your name here</li>
             </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
             <tags>
-                <li>tutorial</li>
+                <li>tag1!</li>
+                <li>tag2!</li>
             </tags>
             <chapter>
                 <li>1</li>
             </chapter>
         </metadata>
     </mission>
-
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Art</title>
-            <body>A quick guide on how to make art for layered images</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
 <mission identifier="tutorial5">
         <jumplabel>tutorial_Project_writing</jumplabel>
         <activationdate>None</activationdate>
@@ -1338,39 +3744,10 @@ Running _start took 0.00s
     </mission>
    
     
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>The basics about coding for this project</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-<mission>
+<mission identifier="special1">
         <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
         <activationdate>None</activationdate>
         <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
         <IsActive>False</IsActive>
         <metadata>
             <authors>
@@ -1381,6 +3758,7 @@ Running _start took 0.00s
             </chapter>
         </metadata>
     </mission>
+    
 Interface start took 0.06s
 
 Initializing gl2 renderer:
@@ -1394,14 +3772,14 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1023.24s
+Early init took 741.10s
 Loading error handling took 0.01s
-Loading script took 0.18s
+Loading script took 0.15s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
@@ -1409,229 +3787,6 @@ Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-<mission identifier="tutorial1">
-        <jumplabel>tutorialintro_start</jumplabel>
-        <activationdate>0</activationdate>
-        <location>entrance</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>True</IsActive>
-        <information>
-            <title>Tutorial Introduction</title>
-            <body>the very introduction to the story</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-
-
-    
-<mission identifier="tutorial2">
-        <jumplabel>tutorial_Project_basics</jumplabel>
-        <activationdate>None</activationdate>
-        <location>kitchen</location>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Basics</title>
-            <body>Here you will be told about the basic expectations that you can expect from this collaberative project</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-    
-    
-<mission identifier="tutorial3">
-        <jumplabel>tutorial_Project_framework</jumplabel>
-        <activationdate>None</activationdate>
-        <location>lumi_room</location>
-        <actors>
-            <li>lumi</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Framework</title>
-            <body>Here we will go indepth about the various bits of code in the framework and what they do</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
-        <activationdate>None</activationdate>
-        <location>tenma_room</location>
-        <actors>
-            <li>tenma</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project Art</title>
-            <body>A quick guide on how to make art for layered images</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-    
-    
-<mission identifier="tutorial5">
-        <jumplabel>tutorial_Project_writing</jumplabel>
-        <activationdate>None</activationdate>
-        <location>shiina_room</location>
-        <actors>
-            <li>shiina</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project writing</title>
-            <body>A quick guide on how to use the Frameworks built in flow controls to activate missions</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-   
-    
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>The basics about coding for this project</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-<mission>
-        <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
-        <activationdate>None</activationdate>
-        <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-Interface start took 0.07s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800'
-Version: b'4.6.0 Compatibility Profile Context 24.10.27.01.240827'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1050.69s
-Loading error handling took 0.01s
-Loading script took 0.17s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -1675,6 +3830,47 @@ Running _start took 0.00s
 
 
     
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 <mission identifier="tutorial2">
         <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
@@ -1703,6 +3899,32 @@ Running _start took 0.00s
 
     
     
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
 <mission identifier="tutorial3">
         <jumplabel>tutorial_Project_framework</jumplabel>
         <activationdate>None</activationdate>
@@ -1730,33 +3952,61 @@ Running _start took 0.00s
     </mission>
     
     
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
         <activationdate>None</activationdate>
-        <location>tenma_room</location>
+        <location>kitchen</location>
         <actors>
-            <li>tenma</li>
+            <li>actor_1</li>
+            <li>actor_2</li>
         </actors>
-        <IsActive>False</IsActive>
+        <IsActive>True</IsActive>
         <information>
-            <title>Project Art</title>
-            <body>A quick guide on how to make art for layered images</body>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
             <image>None</image>
         </information>
         <metadata>
             <authors>
-                <li>MisterMangaker</li>
+                <li>your name here</li>
             </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
             <tags>
-                <li>tutorial</li>
+                <li>tag1!</li>
+                <li>tag2!</li>
             </tags>
             <chapter>
                 <li>1</li>
             </chapter>
         </metadata>
     </mission>
+
     
-    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 <mission identifier="tutorial5">
         <jumplabel>tutorial_Project_writing</jumplabel>
         <activationdate>None</activationdate>
@@ -1784,39 +4034,10 @@ Running _start took 0.00s
     </mission>
    
     
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>The basics about coding for this project</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-<mission>
+<mission identifier="special1">
         <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
         <activationdate>None</activationdate>
         <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
         <IsActive>False</IsActive>
         <metadata>
             <authors>
@@ -1827,7 +4048,8 @@ Running _start took 0.00s
             </chapter>
         </metadata>
     </mission>
-Interface start took 0.06s
+    
+Interface start took 0.05s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -1840,14 +4062,14 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1364.35s
+Early init took 767.01s
 Loading error handling took 0.01s
-Loading script took 0.17s
+Loading script took 0.15s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.05s
 Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
+Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
@@ -1866,7 +4088,7 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.02s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 <mission identifier="tutorial1">
@@ -1898,6 +4120,47 @@ Running _start took 0.00s
 
 
     
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 <mission identifier="tutorial2">
         <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
@@ -1926,6 +4189,32 @@ Running _start took 0.00s
 
     
     
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
 <mission identifier="tutorial3">
         <jumplabel>tutorial_Project_framework</jumplabel>
         <activationdate>None</activationdate>
@@ -1953,33 +4242,61 @@ Running _start took 0.00s
     </mission>
     
     
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
         <activationdate>None</activationdate>
-        <location>tenma_room</location>
+        <location>kitchen</location>
         <actors>
-            <li>tenma</li>
+            <li>actor_1</li>
+            <li>actor_2</li>
         </actors>
-        <IsActive>False</IsActive>
+        <IsActive>True</IsActive>
         <information>
-            <title>Project Art</title>
-            <body>A quick guide on how to make art for layered images</body>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
             <image>None</image>
         </information>
         <metadata>
             <authors>
-                <li>MisterMangaker</li>
+                <li>your name here</li>
             </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
             <tags>
-                <li>tutorial</li>
+                <li>tag1!</li>
+                <li>tag2!</li>
             </tags>
             <chapter>
                 <li>1</li>
             </chapter>
         </metadata>
     </mission>
+
     
-    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 <mission identifier="tutorial5">
         <jumplabel>tutorial_Project_writing</jumplabel>
         <activationdate>None</activationdate>
@@ -2007,39 +4324,10 @@ Running _start took 0.00s
     </mission>
    
     
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>The basics about coding for this project</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-<mission>
+<mission identifier="special1">
         <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
         <activationdate>None</activationdate>
         <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
         <IsActive>False</IsActive>
         <metadata>
             <authors>
@@ -2050,7 +4338,8 @@ Running _start took 0.00s
             </chapter>
         </metadata>
     </mission>
-Interface start took 0.09s
+    
+Interface start took 0.04s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -2063,14 +4352,14 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1808, 1017) drawable=(1808, 1017)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1398.33s
+Early init took 814.22s
 Loading error handling took 0.01s
-Loading script took 0.17s
+Loading script took 0.15s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.01s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\Owner\\AppData\\Roaming/RenPy/backups\\phase_girls_project':
@@ -2088,8 +4377,8 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.06s
-Save pyanalysis. took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.02s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 <mission identifier="tutorial1">
@@ -2121,6 +4410,47 @@ Running _start took 0.00s
 
 
     
+<mission identifier="tutorial4">
+        <jumplabel>tutorial_Project_art</jumplabel>
+        <activationdate>None</activationdate>
+        <location>tenma_room</location>
+        <actors>
+            <li>tenma</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project Art</title>
+            <body>A quick guide on how to make art for layered images</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    
+    
+<mission identifier="special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 <mission identifier="tutorial2">
         <jumplabel>tutorial_Project_basics</jumplabel>
         <activationdate>None</activationdate>
@@ -2149,6 +4479,32 @@ Running _start took 0.00s
 
     
     
+<mission identifier="tutorial6">
+        <jumplabel>tutorial_Project_coding</jumplabel>
+        <activationdate>None</activationdate>
+        <location>pippa_room</location>
+        <actors>
+            <li>pippa</li>
+        </actors>
+        <IsActive>False</IsActive>
+        <information>
+            <title>Project coding</title>
+            <body>The basics about coding for this project</body>
+            <image>None</image>
+        </information>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <tags>
+                <li>tutorial</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+
 <mission identifier="tutorial3">
         <jumplabel>tutorial_Project_framework</jumplabel>
         <activationdate>None</activationdate>
@@ -2176,33 +4532,61 @@ Running _start took 0.00s
     </mission>
     
     
-<mission identifier="tutorial4">
-        <jumplabel>tutorial_Project_art</jumplabel>
+<mission identifier="mis1">
+        <jumplabel>example_mission1</jumplabel>
         <activationdate>None</activationdate>
-        <location>tenma_room</location>
+        <location>kitchen</location>
         <actors>
-            <li>tenma</li>
+            <li>actor_1</li>
+            <li>actor_2</li>
         </actors>
-        <IsActive>False</IsActive>
+        <IsActive>True</IsActive>
         <information>
-            <title>Project Art</title>
-            <body>A quick guide on how to make art for layered images</body>
+            <title>example mission part 3</title>
+            <body>body of the text goes here</body>
             <image>None</image>
         </information>
         <metadata>
             <authors>
-                <li>MisterMangaker</li>
+                <li>your name here</li>
             </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
             <tags>
-                <li>tutorial</li>
+                <li>tag1!</li>
+                <li>tag2!</li>
             </tags>
             <chapter>
                 <li>1</li>
             </chapter>
         </metadata>
     </mission>
+
     
-    
+<mission identifier="specmis1">
+        <jumplabel>special_mission_1</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
+        <IsActive>Flase</IsActive>
+        <metadata>
+            <authors>
+                <li>your name here</li>
+            </authors>
+            <contributors>
+                <li>contributor 1 here</li>
+                <li>contributor 1 here</li>
+            </contributors>
+            <tags>
+                <li>tag1!</li>
+                <li>tag2!</li>
+            </tags>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
 <mission identifier="tutorial5">
         <jumplabel>tutorial_Project_writing</jumplabel>
         <activationdate>None</activationdate>
@@ -2230,39 +4614,10 @@ Running _start took 0.00s
     </mission>
    
     
-<mission identifier="tutorial6">
-        <jumplabel>tutorial_Project_coding</jumplabel>
-        <activationdate>None</activationdate>
-        <location>pippa_room</location>
-        <actors>
-            <li>pippa</li>
-        </actors>
-        <IsActive>False</IsActive>
-        <information>
-            <title>Project coding</title>
-            <body>The basics about coding for this project</body>
-            <image>None</image>
-        </information>
-        <metadata>
-            <authors>
-                <li>MisterMangaker</li>
-            </authors>
-            <tags>
-                <li>tutorial</li>
-            </tags>
-            <chapter>
-                <li>1</li>
-            </chapter>
-        </metadata>
-    </mission>
-
-<mission>
+<mission identifier="special1">
         <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
         <activationdate>None</activationdate>
         <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
         <IsActive>False</IsActive>
         <metadata>
             <authors>
@@ -2273,7 +4628,8 @@ Running _start took 0.00s
             </chapter>
         </metadata>
     </mission>
-Interface start took 0.06s
+    
+Interface start took 0.04s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)

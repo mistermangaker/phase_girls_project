@@ -25,3 +25,5 @@ create the 4 remaining characters
 documentation stuff:
 continue writing documentation for the code
 start making guides for others
+
+ #note potential make a nsfw image class that's a condition switch, based on a preference selectable preference to show, blur, or hide nsfw images. one that shows a black background with text that says, “nsfw image is hidden” 

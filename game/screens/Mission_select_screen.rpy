@@ -46,7 +46,7 @@ screen mission_select_screen():
             use mission_select_screen_buttons(bedroom1,(1150,200),"Mission_select_screen/bedroom1_%s.png",["Tenma's rooom", "This room belongs to Tenma Maemi the lovable adorable fox girl. \nShe is said to be the cutest idol in the world as long as she isn't talking", "mt.png"])
 
             default bedroom2 = providemission_info("pippa_room")
-            use mission_select_screen_buttons(bedroom2,(1300,200),"Mission_select_screen/bedroom2_%s.png",["Pippa's rooom", "This room belongs to pippa pipkin. here name was deliberately left in lower case to annoy you", "mt.png"])
+            use mission_select_screen_buttons(bedroom2,(1300,200),"Mission_select_screen/bedroom2_%s.png",["Pippa's rooom", "This room belongs to peppa pipkin.", "mt.png"])
                     
 
             default bedroom3 = providemission_info("Lia_room")
@@ -61,7 +61,7 @@ screen mission_select_screen():
             
     
             default bedroom6 = providemission_info("lumi_room")
-            use mission_select_screen_buttons(bedroom6,(1000,520),"Mission_select_screen/bedroom6_%s.png",["Lumi's room", "this is an ordinary nothing special room", "mt.png"])
+            use mission_select_screen_buttons(bedroom6,(1000,520),"Mission_select_screen/bedroom6_%s.png",["Lumi's room", "This room may or may not belong to Lumi.", "mt.png"])
     
             default bedroom7 = providemission_info("bedroom7")
             use mission_select_screen_buttons(bedroom7,(1400,520),"Mission_select_screen/bedroom7_%s.png",["empty room", "this is an ordinary nothing special room", "mt.png"])

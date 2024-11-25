@@ -1,12 +1,23 @@
 <?xml version='1.0' encoding='utf8'?>
 <defs>
-    <mission>
+    <mission identifier = "special1">
         <jumplabel>tutorial_Project_writing_nightspecial</jumplabel>
         <activationdate>None</activationdate>
         <activationtag>night</activationtag>
-        <actors>
-            <li>sakana</li>
-        </actors>
+        <IsActive>False</IsActive>
+        <metadata>
+            <authors>
+                <li>MisterMangaker</li>
+            </authors>
+            <chapter>
+                <li>1</li>
+            </chapter>
+        </metadata>
+    </mission>
+    <mission identifier = "special2">
+        <jumplabel>tutorial_Project_art_nightspecial</jumplabel>
+        <activationdate>None</activationdate>
+        <activationtag>night</activationtag>
         <IsActive>False</IsActive>
         <metadata>
             <authors>

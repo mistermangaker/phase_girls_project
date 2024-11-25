@@ -2,9 +2,9 @@
 image bg room = Solid('#606060')
 
 #default placeholder main menu background
-default default_background = MainMenus_background(bgm = "Music_Export/Calm/No.7 Alone With My Thoughts - Esther Abrami.mp3", backgroundimage="Backgrounds/MainMenu/sakana_background.png")
 
 label start:
+    play music "Music_Export/Calm/Butterflies_In_Love.mp3"
     scene bg room
     if persistent.debugmode:
         call system_debug_block from _call_system_debug_block
@@ -26,9 +26,11 @@ label activate:
     #call screen mission_select_screen_2()
     call screen mission_select_screen()
     $ renpy.block_rollback()
+    stop music
     if _return != "aborted":
         $ renpy.call(_return)
 label endday:
+    play music "Music_Export/Calm/Minyo_San_Kyoku.mp3"
     scene bg room
     menu:
         "Today is [calendar.Output]"
