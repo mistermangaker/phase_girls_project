@@ -81,7 +81,7 @@ label tutorial_Project_framework:
 
         lumi "Would you like an advanced tutorial about using xml files?"
         "yes":
-            call .xmlbasics from _call_tutorial_Project_framework_xmlbasics
+            call .xmlbasics
         "no":
             pass
 
@@ -129,7 +129,7 @@ label .pre_tutorial_framework_mission_tutorial:
     menu:
         lumi "now that we have covered the basics should we give you a tutorial on making a mission from scratch?"
         "yeah":
-            call .tutorial_framework_mission_tutorial from _call_tutorial_Project_framework_tutorial_framework_mission_tutorial
+            call .tutorial_framework_mission_tutorial
         "nah":
             pass
 

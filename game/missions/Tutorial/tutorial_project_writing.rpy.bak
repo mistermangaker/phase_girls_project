@@ -105,7 +105,7 @@ label .mission_tutorial_question:
     menu: 
         shiina "now that we have gone over the basics. Would you like to set up your first mission?"
         "yeah":
-            call .mission_tutorial from _call_tutorial_Project_writing_mission_tutorial
+            call .mission_tutorial
         "nah":
             pass
     shiina "Then you are all set!"

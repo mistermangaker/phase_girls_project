@@ -2,6 +2,8 @@
 errors.txt
 log.txt
 traceback.txt
+todolist
+README.md
 game/saves/*
 !game/saves/navigation.json
 

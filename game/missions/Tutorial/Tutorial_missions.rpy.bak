@@ -23,7 +23,7 @@ label tutorialintro_start:
     play music "Music_Export/Calm/Clouds.mp3"  loop volume 0.8
     show sakana
     if persistent.debugmode:
-        call .pre_tutorial_skip from _call_tutorialintro_start_pre_tutorial_skip
+        call .pre_tutorial_skip
     sakana "Hello there and I am sakana and welcome to the game developer tutorial for “The Phase Connect Streamer House” "
     sakana "Here I will explain everything you need to know about the basics for developing visual novels using this game open source framework, “the actor-missions framework” "
     sakana "Now you maybe wondering as to why I am here"
@@ -120,7 +120,7 @@ label .tutorial_afterscreen:
         sakana "How eager you are"
     if not tutorial.menuchoice1 and not tutorial.menuchoice2 and not tutorial.menuchoice3 and not tutorial.menuchoice4 and not tutorial.menuchoice5  and not tutorial.menuchoice7:
         
-        call .tutorial_afterscreen_noChoice from _call_tutorialintro_start_tutorial_afterscreen_noChoice
+        call .tutorial_afterscreen_noChoice
     
     sakana "Alright then we will load up the lessons for you look at them at your own pleasure"
     
@@ -152,14 +152,14 @@ label .tutorial_afterscreen_noChoice:
         sakana "[tutorial.justclickedtext]"
         
         "I was Just curious what would happen if I didn't choose an option":
-            call .testingsakana from _call_tutorialintro_start_testingsakana
+            call .testingsakana
             
         "Oh sorry I missclicked":
             $ tutorial.justclicked = False
-            call .missclicked from _call_tutorialintro_start_missclicked
+            call .missclicked
         "I didn't want to choose anything":
             $ tutorial.justclicked = False
-            call .didntwanttochoose from _call_tutorialintro_start_didntwanttochoose
+            call .didntwanttochoose
     return
 label .testingsakana:
     show sakana at center

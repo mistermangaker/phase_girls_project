@@ -63,12 +63,12 @@ label .questions:
         "Nope":
             jump .end
         "Tell me about the games vision":
-            call .game_vision from _call_tutorial_Project_basics_game_vision
+            call .game_vision
         "What tools will we need to develop for the game?":
-            call .tools from _call_tutorial_Project_basics_tools
+            call .tools
         "Why don't you look like that in real life?" if tutorial.sakana_mainquestions_firstviewing:
             $ tutorial.sakana_mainquestions_firstviewing = False
-            call .insult_sakana from _call_tutorial_Project_basics_insult_sakana
+            call .insult_sakana
     return
 
 label .game_vision:
@@ -96,7 +96,7 @@ label .game_vision:
     sakana "In the future, more floors are planned along with more areas outside of the house such as pools, and hotsprings on the property."
 
     sakana "These haven't been added yet due to them requiring the creation of additional area specific characters sprites, which would already triple the workload."
-    call .questions from _call_tutorial_Project_basics_questions 
+    call .questions 
 
 label .tools:
     show sakana neutral 
@@ -128,7 +128,7 @@ label .tools:
     sakana "You know, just simple quality of life things like that"
     
     sakana "That's all for the tools you will need"
-    call .questions from _call_tutorial_Project_basics_questions_1
+    call .questions
 
 #"<from 5 to 15.5>waves.opus"
 label .insult_sakana:
@@ -187,7 +187,7 @@ label .insult_sakana:
     play music "Music_Export/Calm/Clouds.mp3" loop
     sakana "Back to buisness"
     scene kitchen day
-    call .questions from _call_tutorial_Project_basics_questions_2 
+    call .questions 
 
 ###this still needs to be finished 
 label .end:

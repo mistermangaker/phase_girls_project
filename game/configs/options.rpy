@@ -13,7 +13,7 @@
 ## The _() surrounding the string marks it as eligible for translation.
 
 define config.name = _("The Phase Connect streamer house")
-
+define build.directory_name = "phase_project"
 
 #defaults the debug mode of the game to false
 

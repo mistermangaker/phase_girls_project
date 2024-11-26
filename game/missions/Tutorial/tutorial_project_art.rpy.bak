@@ -176,7 +176,7 @@ label .movetenma_tocenter:
     return
 
 label .bestpractices:
-    call .movetenma_tocenter from _call_tutorial_Project_art_movetenma_tocenter
+    call .movetenma_tocenter
     tenma "for making your own assets, we would recommend the “layeredimage” format, it gives you the most versatility for making many standard poses"
 
     tenma "and for unique poses we recommend making dedicated images for them rather than trying to fit them into a layered image which is a headache to try and do."
@@ -188,7 +188,7 @@ label .bestpractices:
 
 
 label .nsfwart:
-    call .movetenma_tocenter from _call_tutorial_Project_art_movetenma_tocenter_1
+    call .movetenma_tocenter
     tenma "yes you can contribute nsfw art"
 
     tenma "just make sure that whatever mission it's in is tagged with the “nsfw” tag in your mission metadata "
@@ -201,7 +201,7 @@ label .nsfwart:
 
 
 label .endofassets:
-    call .movetenma_tocenter from _call_tutorial_Project_art_movetenma_tocenter_2
+    call .movetenma_tocenter
     tenma "so that's all there is about making and contributing assets to the game"
 
     tenma "it's decently complex but overall not too complicated"
@@ -289,11 +289,11 @@ label .moreattractive:
     menu:
         tenma "So let me ask again. Do you think its funny that I have a flat chest?"
         "Yes":
-            call .moreattractive_yes from _call_tutorial_Project_art_moreattractive_yes
+            call .moreattractive_yes
         "N-No":
-            call .moreattractive_no from _call_tutorial_Project_art_moreattractive_no
+            call .moreattractive_no
         "You aren't cute either":
-            call .moreattractive_hurt from _call_tutorial_Project_art_moreattractive_hurt
+            call .moreattractive_hurt
 
     #narration:
     "perhaps it would be best if we moved along"
