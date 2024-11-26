@@ -6,7 +6,7 @@ label tutorial_Project_art_nightspecial:
     return
 
 label tutorial_Project_art:
-    play music "Music_Export/Calm/Clouds.mp3"
+    play music "Music_Export/Calm/Clouds.mp3" loop
     scene tenma_room day
     show tenma
     "welcome. This section will be about contributing art and other visual assets for the project."
@@ -152,7 +152,7 @@ label .artstyleguide:
     tenma "even making duplicate assets to the main core assets, like this"
     tenma "its perfectly acceptable to make whatever you want in your own style for your own missions"
 label .morequestions:
-    play music "Music_Export/Calm/Clouds.mp3" if_changed
+    play music "Music_Export/Calm/Clouds.mp3" if_changed  loop
     show tenma at right
     menu:
         tenma "any more questions?"
@@ -215,7 +215,7 @@ label .endofassets:
 label .moreattractive:
     show tenma annoyed agitated surprised tochest
     play sound "Effects/YT_Impacts/Crash_Metal_Plate_Big_Room.mp3" volume 1
-    play music "Music_Export/Dramatic/It_s_Coming.mp3"
+    play music "Music_Export/Dramatic/It_s_Coming.mp3" loop
     tenma "what's that supposed to mean exactly?"
     show tenma angry
     tenma "got a problem with small chests huh?!"
@@ -253,7 +253,7 @@ label .moreattractive:
                     
             "hilarious huh?{w=1.0} you think it's funny to make fun of me huh? {nw=6}"
             pass
-    play music "Music_Export/Dramatic/Dramatic_Swarm.mp3"
+    play music "Music_Export/Dramatic/Dramatic_Swarm.mp3"  loop
     play sound "Effects/YT_Impacts/Metal_Trash_Can_Filled (1).mp3" volume 1
     show tenmaupclose annoyed lowgrab ears_angry highpoint with vpunch
     tenma "see I can be funny too"
@@ -301,7 +301,7 @@ label .moreattractive:
 
 
 label .moreattractive_yes:
-    play music "<from 50>Music_Export/Dramatic/Dramatic_Swarm.mp3"
+    play music "<from 50>Music_Export/Dramatic/Dramatic_Swarm.mp3"  loop
     show tenmaupclose look_rage:
         linear 0.1 yalign 0.52
         linear 0.1 xalign 0.53

@@ -2,7 +2,7 @@ default tutorial_Project_framework = Story_Mission.mission_from_xml("tutorial_mi
 
 
 label tutorial_Project_framework:
-    play music "Music_Export/Calm/Clouds.mp3"
+    play music "Music_Export/Calm/Clouds.mp3" loop
     scene lumi_room day
     show lumi at left
 

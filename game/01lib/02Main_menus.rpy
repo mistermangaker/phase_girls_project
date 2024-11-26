@@ -14,6 +14,8 @@ init python:
                 if i.identifier == identifier:
                     return i
 
+#this here is the default background. its bad because i just threw a random picture that i had onto it
+#should be replaced later
 default default_background = MainMenus_background(identifier="defaultbackground1",label= "Sakana's phone call",icon ="Mission_select_screen_icons/sakana_icon.png" ,backgroundimage="Backgrounds/MainMenu/sakana_background.png")
 default persistent.mainmenu_object = "defaultbackground1"
 

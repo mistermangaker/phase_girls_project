@@ -25,7 +25,7 @@ label example_specialmission:
     jump endday
 
 label tutorial_Project_writing:
-    play music "Music_Export/Calm/Clouds.mp3" 
+    play music "Music_Export/Calm/Clouds.mp3" loop
     scene shiina_room day
     show shiina at right
     $ reset_example()

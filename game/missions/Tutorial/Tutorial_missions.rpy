@@ -20,7 +20,7 @@ init python in tutorial:
 
 label tutorialintro_start:
     scene entrance day
-    play music "Music_Export/Calm/Clouds.mp3"
+    play music "Music_Export/Calm/Clouds.mp3"  loop volume 0.8
     show sakana
     if persistent.debugmode:
         call .pre_tutorial_skip
@@ -33,7 +33,9 @@ label tutorialintro_start:
             
     sakana "Well it's because the main artist is overworked and can't justify making more sprites that will only be used during the tuorial"
     sakana "So they will using character sprites that appear in game!"
-    show sakana tutorial jojo pose1
+    play sound "<to 1.8>Effects/YT_Impacts/Dumpster_door.mp3" volume 1.2
+    show sakana tutorial jojo pose1 with vpunch
+    
     sakana "BUT DON'T WORRY"
     sakana "WITH ENOUGH EFFORT ANYTHING IS POSSIBLE"
     sakana "I PLAN ON WASTING AS MUCH OF THEIR PROFESSIONAL TIME AS POSSIBLE!!"
@@ -48,13 +50,13 @@ label tutorialintro_start:
     
     
     sakana "So if that is not the current build your are playing then this information may be..."
-    
+    play sound "<from 1.8 to 3.2>Effects/YT_Impacts/Dumpster_door.mp3" volume 1.2
     show sakana tutorial jojo pose2 with vpunch 
-       
+    
     sakana "OUTDATED!"
     
     show sakana tutorial jojo pose2_point
-    sakana "Check the “wiki and documentation” for a full rundown of features and code as this tutorial is only the basics"
+    sakana "Check the {a=https://github.com/mistermangaker/phase_girls_project/wiki}The github wiki and documentation{/a} on our {a=https://github.com/mistermangaker/phase_girls_project}github repository{/a} for a full rundown of features and code as this tutorial is only the basics"
     show sakana neutral
     sakana "So uh now that is all out of the way. let's get into the lessons"
     
@@ -176,7 +178,8 @@ label .testingsakana:
         sakana "Yes I planned for you to do this. It's why this supplimentary dialogue is here"
         sakana "Now allow me to reiterate"
         sakana "*Ahem*"
-        show sakana tutorial jojo pose1
+        play sound "<from 1.8 to 3.2>Effects/YT_Impacts/Dumpster_door.mp3" volume 1.2
+        show sakana tutorial jojo pose1 with vpunch
         sakana "Rest assured that this tutorial is well made"
         show sakana tutorial jojo pose2
         sakana "Now lets send you back shall we?"
@@ -188,6 +191,7 @@ label .testingsakana:
         sakana "A good game developer needs to be that in order to succeed"
         show sakana tutorial jojo pose2_point
         sakana "I like your enthusiam"
+        play sound "<to 1.8>Effects/YT_Impacts/Dumpster_door.mp3" volume 1.2
         show sakana tutorial jojo pose2_wink with vpunch:
             zoom 2
             yalign 0.20
@@ -198,6 +202,7 @@ label .testingsakana:
         jump .tutorial_menu_choice
     if tutorial.testingsakana == 4:
         sakana "Perhaps we got off on the wrong foot?"
+        play sound "<from 3.2 to 4>Effects/YT_Impacts/Dumpster_door.mp3" volume 1.2
         show sakana tutorial closeup armsdown with vpunch:
             zoom 1.5
         sakana "Allow me to explain"
@@ -219,12 +224,14 @@ label .testingsakana:
         show sakana tutorial closeup armsdown:
             linear 1.5 yalign 0.7
         pause 1.5
+        play sound "<from 1.8 to 3.2>Effects/YT_Impacts/Dumpster_door.mp3" volume 1.2
         show sakana tutorial closeup fist with vpunch
         sakana "Knock it off"
         show sakana:
             zoom 1.0
         jump .tutorial_menu_choice
     if tutorial.testingsakana == 5:
+        show sakana tutorial closeup armsdown
         sakana "Alright that's enough"
         sakana "You have wasted enough time"
         sakana "Seriously the developer can't make any more of these"
@@ -240,6 +247,8 @@ label .testingsakana:
     return
 label .missclicked:
     sakana "Oh you misclicked huh?"
+    play sound "<to 1.8>Effects/YT_Impacts/Dumpster_door.mp3" volume 1.2
+    show sakana tutorial closeup armsdown with vpunch
     sakana "Hold on I can help with that"
     
     $ tutorial.menuchoiceshowthatsallbutton = False
@@ -249,7 +258,19 @@ label .missclicked:
 
 label .didntwanttochoose:
     sakana "excuse you? what do you mean that you didn't want to choose?"
+    play music "<from 10>Music_Export/Dramatic/Dramatic_Swarm.mp3"  loop
+    sakana "listen here you ... {nw=2}"
+    play sound "<from 3.2 to 4>Effects/YT_Impacts/Dumpster_door.mp3" volume 1.2
+    show sakana tutorial closeup armsdown with vpunch:
+        xalign 0.5
     sakana "listen here you ... you..."
+    
+    play sound "Effects/YT_Doors/Wood_Door_Creak_Open.mp3" volume 1
+    show sakana tutorial closeup armsdown:
+        parallel:
+            linear 1.0 zoom 2
+        parallel:
+            linear 1.0 yalign 0.5
     sakana "youre just trying to waste my time arent you?"
     sakana "yeah that has to be it"
     
@@ -267,12 +288,19 @@ label .didntwanttochoose:
     return
 label .didntwanttochoosetwo:
     #sakana grabs the camera
+    play sound "<to 1.8>Effects/YT_Impacts/Dumpster_door.mp3" volume 1.2
+    show sakana tutorial closeup armsdown with vpunch
     sakana "Why else would you be messing around so much?"
     sakana "Testing my patience!"
+    show sakana tutorial closeup armsdown:
+        linear 1.0 zoom 2
     sakana "Going through the beginning menu so much?"
     sakana "You are just messing around!"
     sakana "You know what im going to do to you?"
     sakana "Have fun learning everything chump"
+    hide sakana
+    show sakana neutral at center
+    play music "Music_Export/Calm/Clouds.mp3"  loop volume 0.8
     menu:
         sakana "Select what you want to learn about"
         "Tell me everything oh great master Sakanasan!":

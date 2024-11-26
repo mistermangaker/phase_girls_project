@@ -4,7 +4,7 @@ default tutorial_Project_coding = Story_Mission.mission_from_xml("tutorial_missi
 
 
 label tutorial_Project_coding:
-    play music "Music_Export/Calm/Clouds.mp3"
+    play music "Music_Export/Calm/Clouds.mp3" loop
     scene pippa_room day
     show pippa
     pippa "this section is less of an explanation of mechanics and code and more for core development principles"

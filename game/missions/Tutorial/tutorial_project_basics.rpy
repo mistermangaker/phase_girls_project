@@ -4,7 +4,7 @@ default tutorial_Project_basics = Story_Mission.mission_from_xml("tutorial_missi
 
 
 label tutorial_Project_basics:
-    play music "Music_Export/Calm/Clouds.mp3"
+    play music "Music_Export/Calm/Clouds.mp3" loop
     scene kitchen day
     show sakana
     #sakana Jojo poses
@@ -102,11 +102,11 @@ label .tools:
     show sakana neutral 
     sakana "In order to contribute to this project you are required to have these basic tools."
 
-    sakana "Github. otherwise known as git, and also github desktop. this includes a github account also."
+    sakana "{a=https://github.com/}a github account{/a}. otherwise known as git, and also {a=https://desktop.github.com/download/}github desktop{/a}. this includes a github account also."
 
-    sakana "A text editor specifically designed for coding. I recommend visual studio code with the python and renpy extensions installed "
+    sakana "A text editor specifically designed for coding. I recommend {a=https://code.visualstudio.com/}visual studio code{/a} with the python and renpy extensions installed "
 
-    sakana "You will need the renpy launcher also."
+    sakana "You will need the {a=https://renpy.org}Ren'Py launcher{/a} also."
 
     sakana "Lastly you will need discord, and be apart of the development discord server, which is where all development of the game will be organized from."
 
@@ -131,7 +131,7 @@ label .tools:
 #"<from 5 to 15.5>waves.opus"
 label .insult_sakana:
     
-    play music "Music_Export/Dramatic/Toreador.mp3"
+    play music "Music_Export/Dramatic/Toreador.mp3"  loop
     show sakana tutorial closeup armsdown with vpunch
     play sound "<from 0.15>Effects/YT_Impacts/Rock_Hits_Metal_Debris.mp3" volume 0.7
         
@@ -182,7 +182,7 @@ label .insult_sakana:
     sakana "Likewise I don't hate you either.{w=2} Just be more careful with your words next time okay?"
     show sakana tutorial closeup pointatyou
     sakana "right good talk we had there"
-    play music "Music_Export/Calm/Clouds.mp3"
+    play music "Music_Export/Calm/Clouds.mp3" loop
     sakana "Back to buisness"
     scene kitchen day
     call .questions 
