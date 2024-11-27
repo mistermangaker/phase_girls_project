@@ -55,7 +55,6 @@ If you want to contribute to this project you will need all of the required tool
 
 # required tools to contribute to the project
 you will need:
-tools we use:  
 [git/github/github desktop](https://desktop.github.com/download/)  
 [renpy launcher](https://www.renpy.org/)  
 [visual studio code](https://code.visualstudio.com/)  
