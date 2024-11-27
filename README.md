@@ -59,7 +59,7 @@ tools we use:
 [git/github/github desktop](https://desktop.github.com/download/)  
 [renpy launcher](https://www.renpy.org/)  
 [visual studio code](https://code.visualstudio.com/)  
-discord
+[discord](https://discord.gg/DkgZnU3GXV)
 
 
 # contributing guidelines
