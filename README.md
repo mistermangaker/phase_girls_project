@@ -5,6 +5,12 @@
 Q: What is the goal of this project?  
 A: It's a community driven fangame, the goal is to show off our passion for our favorite streamers  
 
+Q: What genre will the game be?  
+A: It is planned to be an episodic, slice of life, comedy. see the "project information" section, under "Overview" for more information
+
+Q: What endings are planned?
+A: There are no current endings planned, simply by the nature of the games architecture. see the "project information" section, under "Overview" for more information
+
 Q: Will this game cost money?  
 A: Never. It's a game made by the community so it is, and always will be, free and open source for anyone to play, download, edit, or redistribute the liscense can he found [here](https://creativecommons.org/licenses/by-nc-sa/4.0/)  
 
@@ -36,9 +42,14 @@ A: No. Human made assets only. check the "contributing" section for more informa
 
 
 # Poject Information
-## basic vision  
- normal visual novels have several pitfalls that this project aims to address. 
- this project aims to be modular, and easily expandable. allowing a single contributor to make stories and full routes mostly independent from other contributors with relatively few headaches. hopefully this means that this will allow a large number of contributors to make content for the game without needing direction and coordination from a central dev team. 
+## Overview  
+This project is built with the goal of being a large disjointed colection of short stories, funny moments, and various fanfiction from the community in a visual novel format. this format of writting clashes with the more interconnected nature of most visual novels which have long branching paths (known as routes) where all later routes depend on previous work. in a community driven project such as this, that would cause significant issues, as the development can easily be stalled if just one or two people work too slowly compared to the rest of the team. hence why the framework that this game uses was developed.  
+
+This framework allows for easy insertion of whatever content a contributor wants, at any point in the game. then the game will handle presenting the content to the player. The premise that the entire game is set in a single building is primarily to save on the time costs of making vast quanties of backgrounds, sound effects, and assets for the game, allowing us to reuse these assets over and over again without breaking immersion for the player.
+
+It is also for this reason that the primary genre of the game is comedy and slice of life, as that is what best fits how the framework functions. Though it doesn't make it impossible for contributors to adapt this framework to other genres, the planned future mechanic of "chapters" will also make this much easier to achieve since it will allow for contributors to easily segment their work into its own space. 
+
+This project aims to be modular, and easily expandable. allowing a single contributor to make stories and full routes mostly independent from other contributors with relatively few headaches. Hopefully this means that this will allow a large number of contributors to make content for the game without needing direction and coordination from a central dev team.   
 
 ## framework
 the main point of this framework is to allow a single contributor to make a single story (known internally as a "mission"), then be able to drag and drop the files into the missions directory and the game will handle everything else from there.
@@ -90,12 +101,5 @@ Likewise should any of the talents or phase connect management voice issues with
 ### As for other vtubers or streamers:
 This game is primarily aimed as a phase connect fan game. Thus should primarily focus on the phase connect talents. streamers and other vtubers that have collaborated with phase connect talents in the past are allowed to be included and make cameos in this story with the same rules as above. 
 
-
-
-
-
-
-
-
-
-
+### All NSFW, suggestive, or ecchi content needs proper disclosure censorship
+This project allows for nsfw and suggestive content. however if a player wants to avoid such things, or a streamer wants to play the game on stream, then they should be able to be absolutely certain that there won't be any surprises. it is for this reason that ANY addition of nsfw or ecchi content in any contibution must include a NSFW tag in their contents metadata. 
