@@ -73,17 +73,18 @@ you will need:
 
 
 # contributing guidelines
-disclaimer: these guidelines may change in future. contributions made before the changes may or may not be grandfathered in depending on the judgement of the core dev team
+### Disclaimer:  
+These guidelines may change in future. contributions made before the changes may or may not required to change. they will be considered on a case by case basis
+### Presumption of good faith contribution
+To preface the following rules. we will assume that any content added to this project was done in purely good faith by the contributor and that any violations of these rules (unless we are led to believe otherwise) were entirely non malicious in nature. We will simply ask that the offending content be changed or removed. As such no punishment will be administered based on accidental missteps of these rules (this doesnt mean they won't be enforced tho).
 
-To preface the following rules. we will assume that any content added to this project was done in purely good faith by the contributor and that any violations of these rules (unless we are led to believe otherwise) were entirely non malicious in nature. We will simply ask that the offending content be changed or removed. 
-
-### all assets contributed should either be made by, have the permission of, or be otherwise be allowed by, the original creator
+### All assets contributed should either be made by, have the permission of, or be otherwise be allowed by, the original creator
 all contributions have to have either been made by the original creator, or be allowed to be contribruted by them, either through direct permission, or by liscense. 
 
-### contibutions should generally be of a good quality
+### Contibutions should generally be of a good quality
 assets, stories, art, or code may be rejected or modified if its of especially or intentionally poor quality. an example would be contributions with large quanties of mispelled dialogue nonsensical stories, or being overly large, or containing massive amounts of unused files that bloat the game unnecessarily 
 
-### human made content only
+### Human made content only
 no ai generated assets of any kind. 
 
 ### No political content
@@ -92,14 +93,16 @@ That being all content so strictly be apolitical in nature. The audience came he
 ### No Twitter or internet drama
 Same reason as above. There are other places more appropriate for that.
 
+### Any Talent shown in this game gets veto power over their depiction in this game
+Should any of the talents or phase connect management voice issues with any content in this game. It will be changed to a state which they find more acceptable or removed from the game if they so choose. 
+(should this happen we ask the talent and the audience at large to assume good faith on behalf of the original contributor and not attempt to seek revenge or otherwise punish them) 
+
 ### No disparaging content of the phase connect talents.
 This one will require more explanation. In short, banter, memes, or shitposts of the phase connect talents are permitted without moderation or censorship. bad faith interpretations of the talents character, personality, or references to past lives or careers are not. 
-
-Likewise should any of the talents or phase connect management voice issues with any content in this game. It will be changed or removed from the game if they so choose. 
-(should this happen we ask the talent and the audience at large to assume good faith on behalf of the original contributor and not attempt to seek revenge or otherwise punish them)
 
 ### As for other vtubers or streamers:
 This game is primarily aimed as a phase connect fan game. Thus should primarily focus on the phase connect talents. streamers and other vtubers that have collaborated with phase connect talents in the past are allowed to be included and make cameos in this story with the same rules as above. 
 
 ### All NSFW, suggestive, or ecchi content needs proper disclosure censorship
-This project allows for nsfw and suggestive content. however if a player wants to avoid such things, or a streamer wants to play the game on stream, then they should be able to be absolutely certain that there won't be any surprises. it is for this reason that ANY addition of nsfw or ecchi content in any contibution must include a NSFW tag in their contents metadata. 
+This project allows for nsfw and suggestive content. however if a player wants to avoid such things, or a streamer wants to play the game on stream, then they should be able to be absolutely certain that there won't be any surprises. it is for this reason that ANY addition of nsfw or ecchi content in any contibution must include a NSFW tag in their contents metadata. likewise the nsfw content follows the same rules as above, depicted talents or streamers get veto power on this 
+
