@@ -1,5 +1,5 @@
-# phase_girls_project
- visual novel involoving talents from the phase connect company
+# The Phase Connect Streamerhouse
+ this is a visual novel involoving talents from the phase connect company
 
 # frequently asked questions
 Q: What is the goal of this project?  
