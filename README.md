@@ -63,10 +63,38 @@ discord
 
 
 # contributing guidelines
+disclaimer: these guidelines may change in future. contributions made before the changes may or may not be grandfathered in depending on the judgement of the core dev team
 
-## acceptable contibutions
+To preface the following rules. we will assume that any content added to this project was done in purely good faith by the contributor and that any violations of these rules (unless we are led to believe otherwise) were entirely non malicious in nature. We will simply ask that the offending content be changed or removed. 
 
-## contibutions may be rejected if
+### all assets contributed should either be made by, have the permission of, or be otherwise be allowed by, the original creator
+all contributions have to have either been made by the original creator, or be allowed to be contribruted by them, either through direct permission, or by liscense. 
+
+### contibutions should generally be of a good quality
+assets, stories, art, or code may be rejected or modified if its of especially or intentionally poor quality. an example would be contributions with large quanties of mispelled dialogue nonsensical stories, or being overly large, or containing massive amounts of unused files that bloat the game unnecessarily 
+
+### human made content only
+no ai generated assets of any kind. 
+
+### No political content
+That being all content so strictly be apolitical in nature. The audience came here to enjoy their favorite streamers and not get lectured by the author. 
+
+### No Twitter or internet drama
+Same reason as above. There are other places more appropriate for that.
+
+### No disparaging content of the phase connect talents.
+This one will require more explanation. In short, banter, memes, or shitposts of the phase connect talents are permitted without moderation or censorship. bad faith interpretations of the talents character, personality, or references to past lives or careers are not. 
+
+Likewise should any of the talents or phase connect management voice issues with any content in this game. It will be changed or removed from the game if they so choose. 
+(should this happen we ask the talent and the audience at large to assume good faith on behalf of the original contributor and not attempt to seek revenge or otherwise punish them)
+
+### As for other vtubers or streamers:
+This game is primarily aimed as a phase connect fan game. Thus should primarily focus on the phase connect talents. streamers and other vtubers that have collaborated with phase connect talents in the past are allowed to be included and make cameos in this story with the same rules as above. 
+
+
+
+
+
 
 
 
